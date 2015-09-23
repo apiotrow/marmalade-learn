@@ -1,0 +1,27 @@
+#!/usr/bin/env mkb
+
+
+#source files for this project
+#if file is in folder, put folder name in parens above it
+#bracketed things cause solution explorer to put them in subsections
+files
+{
+    Main.cpp
+}
+
+#libraries we're using
+#can create your own libraries and import them here
+subprojects
+{
+    #marmalde graphics module
+    iwgx
+}
+
+#for dealing with different devices
+#"name" is the name of the executable
+#"caption" is the words under the icon
+deployment
+{
+    name="Hello"
+    caption="hello world"
+}

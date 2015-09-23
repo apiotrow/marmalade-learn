@@ -1,0 +1,3 @@
+f293d601116dc692c3afb897332fe61f e6d63c91e4a54c08c9dcb89666962fd3 ffffffffffffffffffffffffffffffff 1647927 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug ARM/learn.elf
+00000000560246cc0000000000004fa7 c8ff82575eb20cf0e8b4fe1a6e12f9d7 ffffffffffffffffffffffffffffffff 190820 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
+000000000000003e0000000000004283 3a6c54561cdd5e3a2b1b468d5d3d1362 ffffffffffffffffffffffffffffffff 9204 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
