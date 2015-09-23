@@ -1,4 +1,11 @@
 # comments and whitespace stripped by deployment tool
+[APP]
+{OS=ANDROID}
+Message="thing from the app.icf file"
+{}
+{OS=IPHONE}
+Message="we're on ios"
+{}
 [s3e]
 SysAppVersion=0.0.1
 SysAppCaption="learn"

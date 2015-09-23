@@ -8,3 +8,6 @@
 # e.g.
 # [MyApplicationGroup]
 # MySetting   Description of what MySetting is for, its default values, etc
+
+[APP]
+Message The message we want to display on screen

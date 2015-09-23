@@ -15,3 +15,21 @@
 #
 # Some conditional operations are also permitted, see the
 # S3E documentation for details.
+
+#use {OS=platform} where platform is ANDROID, BADA, WINDOWS, or IPHONE, and it will make what follows only work if the app is opened on that OS. s3eDeviceGetString(S3E_DEVICE_OS) can get the device we're on
+#use {ID=playform id} where id is s3eDeviceGetString(S3E_ DEVICE_ID). makes what follows only apply when run on that specific device
+#to terminate the list of things after these, just add {} and you can begin adding settings globally again
+
+[APP]
+{OS=ANDROID}
+Message="we're on android"
+{}
+
+{OS=IPHONE}
+Message="we're on ios"
+{}
+
+{OS=OSX}
+Message="we're on osx"
+{}
+

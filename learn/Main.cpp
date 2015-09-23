@@ -10,9 +10,10 @@ int main()
     //Initialise marmalade's rendering module. initializes the screen and sets up standard behavior
     IwGxInit();
     
-    char message[S3E_CONFIG_STRING_MAX] = "HELLO!!";
+    //const char* = {s3eDeviceGetString(S3E_DEVICE_OS)};
+    char message[S3E_CONFIG_STRING_MAX] = "sdfs";
     
-    //check if a message has been spcified in the app's configuration file
+    //check if a message has been spcified in the app's configuration file (app.icf). if it has, it gives it that value, replacing one above
     s3eConfigGetString("APP", "Message", message);
     
     IwGxSetColClear(0, 0, 0, 225); //set screen clear color to black
