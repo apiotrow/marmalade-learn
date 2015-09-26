@@ -27040,10 +27040,10 @@ LOAD /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/buil
  .debug_abbrev  0x0000000000000000      0x183 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
  .debug_abbrev  0x0000000000000183      0x7a0 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
 
-.debug_line     0x0000000000000000      0x82f
+.debug_line     0x0000000000000000      0x831
  *(.debug_line)
  .debug_line    0x0000000000000000      0x263 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
- .debug_line    0x0000000000000263      0x5cc /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
+ .debug_line    0x0000000000000263      0x5ce /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
 
 .debug_frame    0x0000000000000000     0x3bc0
  *(.debug_frame)
@@ -27237,12 +27237,12 @@ LOAD /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/buil
  .debug_frame   0x0000000000003b40       0x30 /Applications/Marmalade.app/Contents/s3e/gcc/darwin/arm/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6/libc.a(lib_a-envlock.o)
  .debug_frame   0x0000000000003b70       0x50 /Applications/Marmalade.app/Contents/s3e/gcc/darwin/arm/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6/libc.a(lib_a-fputwc.o)
 
-.debug_str      0x0000000000000000    0x16e23
+.debug_str      0x0000000000000000    0x16e24
  *(.debug_str)
- .debug_str     0x0000000000000000      0x4a1 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
-                                        0x50a (size before relaxing)
- .debug_str     0x00000000000004a1    0x16982 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
-                                      0x1703d (size before relaxing)
+ .debug_str     0x0000000000000000      0x4a2 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
+                                        0x50b (size before relaxing)
+ .debug_str     0x00000000000004a2    0x16982 /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
+                                      0x1703e (size before relaxing)
 
 .debug_loc      0x0000000000000000      0x149
  *(.debug_loc)

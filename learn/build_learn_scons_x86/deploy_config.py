@@ -6,7 +6,7 @@
 config = {}
 cmdline = ['/Applications/Marmalade.app/Contents/s3e/makefile_builder/mkb.py', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb', '--deploy-only', '--hub-data', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/project_learn/mkb-scons.txt', '--buildenv=SCONS']
 mkb = '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb'
-mkf = ['/Applications/Marmalade.app/Contents/s3e/s3e-default.mkf', '/Applications/Marmalade.app/Contents/modules/iwutil/iwutil.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/libjpeg.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libpng/libpng.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/zlib/zlib.mkf']
+mkf = ['/Applications/Marmalade.app/Contents/s3e/s3e-default.mkf', '/Applications/Marmalade.app/Contents/modules/iwgx/iwgx.mkf', '/Applications/Marmalade.app/Contents/modules/iwgl/iwgl.mkf', '/Applications/Marmalade.app/Contents/modules/iwutil/iwutil.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/libjpeg.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libpng/libpng.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/zlib/zlib.mkf', '/Applications/Marmalade.app/Contents/modules/iwgeom/iwgeom.mkf', '/Applications/Marmalade.app/Contents/modules/iwresmanager/iwresmanager.mkf', '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/PVRTexTool.mkf']
 
 class DeployConfig(object):
     pass
@@ -23,21 +23,21 @@ assets['Default'] = [
 
 class DefaultConfig(DeployConfig):
     embed_icf = -1
-    name = 'learn'
+    name = 'Hello'
     pub_sign_key = 0
     priv_sign_key = 0
-    caption = 'learn'
-    long_caption = 'learn'
+    caption = 'hello world'
+    long_caption = 'Hello'
     version = [0, 0, 1]
     config = ['/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf']
     data_dir = '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data'
     mkb_dir = '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn'
     iphone_link_lib = []
-    osx_ext_dll = []
+    osx_ext_dll = ['/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib']
     wp81_extra_pri = []
     ws8_ext_capabilities = []
     android_external_res = []
-    win32_ext_dll = []
+    win32_ext_dll = ['/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/win32/PVRTexTool.dll']
     wp8_ext_capabilities = []
     ws8_extra_res = []
     ws81_ext_managed_dll = []

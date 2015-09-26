@@ -10,8 +10,14 @@
 #ifndef IW_APP_VERSION
 #   define IW_APP_VERSION "1.0"
 #endif
+#ifndef IW_ASSERTION_CHANNEL_2D
+#   define IW_ASSERTION_CHANNEL_2D 1
+#endif
 #ifndef IW_ASSERTION_CHANNEL_PVRTEXTOOL
 #   define IW_ASSERTION_CHANNEL_PVRTEXTOOL 1
+#endif
+#ifndef IW_MKF_IW2D
+#   define IW_MKF_IW2D 1
 #endif
 #ifndef IW_MKF_IWGEOM
 #   define IW_MKF_IWGEOM 1
@@ -21,6 +27,9 @@
 #endif
 #ifndef IW_MKF_IWGX
 #   define IW_MKF_IWGX 1
+#endif
+#ifndef IW_MKF_IWGXFONT
+#   define IW_MKF_IWGXFONT 1
 #endif
 #ifndef IW_MKF_IWRESMANAGER
 #   define IW_MKF_IWRESMANAGER 1
@@ -39,6 +48,9 @@
 #endif
 #ifndef IW_MKF_S3E_DEFAULT
 #   define IW_MKF_S3E_DEFAULT 1
+#endif
+#ifndef IW_MKF_TINICONV
+#   define IW_MKF_TINICONV 1
 #endif
 #ifndef IW_MKF_ZLIB
 #   define IW_MKF_ZLIB 1

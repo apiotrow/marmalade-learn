@@ -13,8 +13,15 @@ files
 #can create your own libraries and import them here
 subprojects
 {
+    iw2d
+    iwgeom
+    iwgl
+
     #marmalde graphics module
     iwgx
+
+    iwutil
+
 }
 
 #for dealing with different devices
