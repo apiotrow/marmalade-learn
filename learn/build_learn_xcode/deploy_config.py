@@ -4,7 +4,7 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['/Applications/Marmalade.app/Contents/s3e/makefile_builder/mkb.py', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb', '--buildenv=XCODE', '--deploy-only']
+cmdline = ['/Applications/Marmalade.app/Contents/s3e/makefile_builder/mkb.py', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb', '--buildenv=XCODE', '--debug', '--arm', '--compiler=gcc', '--no-ide', '--execute', '--deploy-only']
 mkb = '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb'
 mkf = ['/Applications/Marmalade.app/Contents/s3e/s3e-default.mkf', '/Applications/Marmalade.app/Contents/modules/iw2d/iw2d.mkf', '/Applications/Marmalade.app/Contents/modules/iwgx/iwgx.mkf', '/Applications/Marmalade.app/Contents/modules/iwgl/iwgl.mkf', '/Applications/Marmalade.app/Contents/modules/iwutil/iwutil.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/libjpeg.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libpng/libpng.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/zlib/zlib.mkf', '/Applications/Marmalade.app/Contents/modules/iwgeom/iwgeom.mkf', '/Applications/Marmalade.app/Contents/modules/iwresmanager/iwresmanager.mkf', '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/PVRTexTool.mkf', '/Applications/Marmalade.app/Contents/modules/iwgxfont/iwgxfont.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/tiniconv.mkf']
 

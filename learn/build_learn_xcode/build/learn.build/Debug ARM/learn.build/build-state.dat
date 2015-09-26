@@ -30,6 +30,15 @@ i"IwDebug.h"
 i"s3eDevice.h"
 i"PVRTexTool.h"
 
+N/Applications/Marmalade.app/Contents/modules/iw2d/h/Iw2D.h
+c000000005502D0010000000000005B3F
+t1426247681
+s23359
+i"s3eSurface.h"
+i"IwColour.h"
+i"IwGeom.h"
+i"IwUtil.h"
+
 N/Applications/Marmalade.app/Contents/modules/iwgeom/h/IwGeom.h
 c000000005502D0030000000000000327
 t1426247683
@@ -562,6 +571,19 @@ i"IwMath.h"
 i"IwSerialise.h"
 i"IwAllocator.h"
 
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwAutoFile.h
+c000000005502D0020000000000000956
+t1426247682
+s2390
+i"s3eFile.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwBuffer.h
+c000000005502D0020000000000003936
+t1426247682
+s14646
+i"s3eTypes.h"
+i"IwCore.h"
+
 N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwClassFactory.h
 c000000005502D00C000000000000177A
 t1426247692
@@ -611,6 +633,19 @@ s8136
 i"IwDivTable.h"
 i"s3eTypes.h"
 
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwEvent.h
+c000000005502D00D0000000000001DCA
+t1426247693
+s7626
+i"IwManaged.h"
+i"IwManagedList.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwFile.h
+c000000005502D00D0000000000001452
+t1426247693
+s5202
+i"s3eTypes.h"
+
 N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwHashString.h
 c000000005502D00D000000000000070B
 t1426247693
@@ -626,6 +661,13 @@ s42966
 i"s3eFile.h"
 i"s3eMemory.h"
 i"IwDebug.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwKeymap.h
+c000000005502D00D0000000000001C94
+t1426247693
+s7316
+i"s3eTypes.h"
+i"s3eKeyboard.h"
 
 N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwList.h
 c000000005502D0020000000000001D6A
@@ -707,6 +749,20 @@ i"IwSingleton.h"
 i"IwString.h"
 i"IwTypes.h"
 
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwPath.h
+c000000005502D002000000000000119D
+t1426247682
+s4509
+i"s3eTypes.h"
+i"s3eFile.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwProfileMenu.h
+c000000005502D00D0000000000000B24
+t1426247693
+s2852
+i"IwMenu.h"
+i"IwRuntime.h"
+
 N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwRandom.h
 c000000005502D002000000000000086B
 t1426247682
@@ -754,11 +810,89 @@ t1426247693
 s2125
 i"IwArray.h"
 
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwTextParser.h
+c000000005502D00D0000000000001F56
+t1426247693
+s8022
+i"IwArray.h"
+i"s3eFile.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwTextParserITX.h
+c000000005502D00D0000000000005DC4
+t1426247693
+s24004
+i"IwArray.h"
+i"IwString.h"
+i"IwTextParser.h"
+i"IwSingleton.h"
+i"IwString.h"
+i"IwManaged.h"
+i"IwResource.h"
+
 N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwTypes.h
 c000000005502D002000000000000086C
 t1426247682
 s2156
 i"s3eTypes.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwUTF8.h
+c000000005502D0020000000000001E33
+t1426247682
+s7731
+i"s3eTypes.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwUncopyable.h
+c000000005502D00D0000000000000369
+t1426247693
+s873
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwUtil.h
+c000000005502D00D000000000000057E
+t1426247693
+s1406
+i"IwClassFactory.h"
+i"IwCopyingPtr.h"
+i"IwDivTable.h"
+i"IwEvent.h"
+i"IwFile.h"
+i"IwHashString.h"
+i"IwImage.h"
+i"IwManaged.h"
+i"IwMemBucket.h"
+i"IwMemory.h"
+i"IwKeymap.h"
+i"IwManagedList.h"
+i"IwMemBucketHelpers.h"
+i"IwMenu.h"
+i"IwProfileMenu.h"
+i"IwResource.h"
+i"IwRuntime.h"
+i"IwSerialise.h"
+i"IwTextParserITX.h"
+i"IwTextParseable.h"
+i"IwTextParser.h"
+i"IwUncopyable.h"
+i"IwUtilInitTerm.h"
+i"IwAllocator.h"
+i"IwArray.h"
+i"IwDivide.h"
+i"IwAutoFile.h"
+i"IwBuffer.h"
+i"IwDebug.h"
+i"IwPath.h"
+i"IwList.h"
+i"IwMath.h"
+i"IwMemManagerDL.h"
+i"IwRandom.h"
+i"IwSingleton.h"
+i"IwString.h"
+i"IwTypes.h"
+i"IwUTF8.h"
+
+N/Applications/Marmalade.app/Contents/modules/iwutil/h/IwUtilInitTerm.h
+c000000005502D00D000000000000045F
+t1426247693
+s1119
 
 N/Applications/Marmalade.app/Contents/s3e/h/EGL/egl.h
 c000000005502D05E0000000000003311
@@ -802,6 +936,11 @@ c000000005502D05F000000000000048A
 t1426247775
 s1162
 
+N/Applications/Marmalade.app/Contents/s3e/h/legacy/s3eKeyboard_legacy.h
+c000000005502D05F00000000000003E8
+t1426247775
+s1000
+
 N/Applications/Marmalade.app/Contents/s3e/h/s3eConfig.h
 c000000005502D05F00000000000016DD
 t1426247775
@@ -841,6 +980,13 @@ c000000005502D05F00000000000020DF
 t1426247775
 s8415
 i"s3eTypes.h"
+
+N/Applications/Marmalade.app/Contents/s3e/h/s3eKeyboard.h
+c000000005502D05F000000000000683B
+t1426247775
+s26683
+i"s3eTypes.h"
+i"legacy/s3eKeyboard_legacy.h"
 
 N/Applications/Marmalade.app/Contents/s3e/h/s3eMemory.h
 c000000005502D05F000000000000451D
@@ -1202,23 +1348,24 @@ t1407775093
 s478
 
 N/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp
-c00000000560630AD00000000000007A8
-t1443246253
-s1960
+c00000000560637FF0000000000000851
+t1443248127
+s2129
 i"IwGx.h"
+i"Iw2D.h"
 i"s3eConfig.h"
 i"s3eDevice.h"
 
 N/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug ARM/learn.elf
-t1443246224
+t1443246261
 s1647931
 
 N/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
-t1443246260
-s190828
+t1443248468
+s193412
 
 N/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
-t1443246259
+t1443248467
 s9204
 
 N/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Objects-normal/i386/learn.LinkFileList
@@ -1273,11 +1420,11 @@ s1265
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesfc35353368b6bb41^02818a3368b6bb41^---0#1#1#--18"Check dependencies36"B47ABDB3-FC19-40C2-8CFB-5BE3588273A4-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdcd95fd370b6bb41^2fa7b0d370b6bb41^---0#1#1#--18"Check dependencies36"23C61F0C-6431-43DD-8BA7-D08303D21A52-
 
 CCompileC build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp normal i386 c++ com.apple.compilers.marmalade
-s464939059.492839
-e464939060.574783
+s464941267.703952
+e464941268.691626
 r1
 xCompileC
 xbuild/learn.build/Debug ARM/learn.build/Objects-normal/i386/Main.o
@@ -1287,12 +1434,12 @@ xi386
 xc++
 xcom.apple.compilers.marmalade
 o
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp200"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o [1m/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp[0m normal i386 c++ com.apple.compilers.marmalade95487e3368b6bb41^aa65933468b6bb41^-1"-0#0#1#-19%DVTDocumentLocation2@68"file:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp0000000000000000^2789"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o [1m/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp[0m normal i386 c++ com.apple.compilers.marmalade    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export LANG=en_US.US-ASCII    export MACOSX_DEPLOYMENT_TARGET=10.9    export NEXT_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-gcc -x c++ -fmessage-length=80 -pipe -Wno-trigraphs -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -gdwarf-2 -fvisibility-inlines-hidden -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/include -I/Applications/Marmalade.app/Contents/modules/iwgx/h -I/Applications/Marmalade.app/Contents/modules/iwgl/h -I/Applications/Marmalade.app/Contents/modules/iwutil/h -I/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/h -I/Applications/Marmalade.app/Contents/modules/third_party/zlib/h -I/Applications/Marmalade.app/Contents/modules/third_party/libpng/h -I/Applications/Marmalade.app/Contents/modules/iwgeom/h -I/Applications/Marmalade.app/Contents/modules/iwresmanager/h -I/Applications/Marmalade.app/Contents/extensions/PVRTexTool/h -I/Applications/Marmalade.app/Contents/s3e/h -I/Applications/Marmalade.app/Contents/s3e/h/ext -I/Applications/Marmalade.app/Contents/s3e/h/std -I/Applications/Marmalade.app/Contents/s3e/h/std/c++ -I/Applications/Marmalade.app/Contents/s3e/h/ext_legacy -I/Applications/Marmalade.app/Contents/s3e/h/legacy -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources/i386 -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -DMAC_OS_X_VERSION_MIN_REQUIRED=1090 -fconstant-cfstrings -D__CONSTANT_CFSTRINGS__ -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -Wno-unused -Wno-parentheses -pipe -ffunction-sections -mstructure-size-boundary=8 -march=armv6 -mfloat-abi=soft -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC -g -O0 -gdwarf-2 -include temp_defines_debug.h -include temp_defines_debug.h -Wno-reorder -fvisibility-inlines-hidden -fno-exceptions -c /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o36"A3D6C1C5-5EEE-4A44-BC0F-7BC7DA0F8292-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp200"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o [1m/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp[0m normal i386 c++ com.apple.compilers.marmalade5455b4d370b6bb41^0421b1d470b6bb41^-1"-0#0#1#-19%DVTDocumentLocation2@68"file:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp0000000000000000^2976"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o [1m/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp[0m normal i386 c++ com.apple.compilers.marmalade    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export LANG=en_US.US-ASCII    export MACOSX_DEPLOYMENT_TARGET=10.9    export NEXT_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-gcc -x c++ -fmessage-length=80 -pipe -Wno-trigraphs -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -gdwarf-2 -fvisibility-inlines-hidden -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/include -I/Applications/Marmalade.app/Contents/modules/iw2d/h -I/Applications/Marmalade.app/Contents/modules/iwgx/h -I/Applications/Marmalade.app/Contents/modules/iwgl/h -I/Applications/Marmalade.app/Contents/modules/iwutil/h -I/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/h -I/Applications/Marmalade.app/Contents/modules/third_party/zlib/h -I/Applications/Marmalade.app/Contents/modules/third_party/libpng/h -I/Applications/Marmalade.app/Contents/modules/iwgeom/h -I/Applications/Marmalade.app/Contents/modules/iwresmanager/h -I/Applications/Marmalade.app/Contents/extensions/PVRTexTool/h -I/Applications/Marmalade.app/Contents/modules/iwgxfont/h -I/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/source -I/Applications/Marmalade.app/Contents/s3e/h -I/Applications/Marmalade.app/Contents/s3e/h/ext -I/Applications/Marmalade.app/Contents/s3e/h/std -I/Applications/Marmalade.app/Contents/s3e/h/std/c++ -I/Applications/Marmalade.app/Contents/s3e/h/ext_legacy -I/Applications/Marmalade.app/Contents/s3e/h/legacy -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources/i386 -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -DMAC_OS_X_VERSION_MIN_REQUIRED=1090 -fconstant-cfstrings -D__CONSTANT_CFSTRINGS__ -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -Wno-unused -Wno-parentheses -pipe -ffunction-sections -mstructure-size-boundary=8 -march=armv6 -mfloat-abi=soft -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC -g -O0 -gdwarf-2 -include temp_defines_debug.h -include temp_defines_debug.h -Wno-reorder -fvisibility-inlines-hidden -fno-exceptions -c /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/Main.cpp -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/Main.o36"66EA6ECD-15A3-4BD1-8296-1EC22C94142B-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CCompileC build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o /Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp normal i386 c++ com.apple.compilers.marmalade
-s464939059.487970
-e464939059.635961
+s464941267.694674
+e464941267.842135
 r1
 xCompileC
 xbuild/learn.build/Debug ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o
@@ -1302,30 +1449,30 @@ xi386
 xc++
 xcom.apple.compilers.marmalade
 o
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp248"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o [1m/Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp[0m normal i386 c++ com.apple.compilers.marmaladeff217d3368b6bb41^4fe7a23368b6bb41^-1"-0#0#1#-19%DVTDocumentLocation2@100"file:///Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp0000000000000000^2885"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o [1m/Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp[0m normal i386 c++ com.apple.compilers.marmalade    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export LANG=en_US.US-ASCII    export MACOSX_DEPLOYMENT_TARGET=10.9    export NEXT_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-gcc -x c++ -fmessage-length=80 -pipe -Wno-trigraphs -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -gdwarf-2 -fvisibility-inlines-hidden -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/include -I/Applications/Marmalade.app/Contents/modules/iwgx/h -I/Applications/Marmalade.app/Contents/modules/iwgl/h -I/Applications/Marmalade.app/Contents/modules/iwutil/h -I/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/h -I/Applications/Marmalade.app/Contents/modules/third_party/zlib/h -I/Applications/Marmalade.app/Contents/modules/third_party/libpng/h -I/Applications/Marmalade.app/Contents/modules/iwgeom/h -I/Applications/Marmalade.app/Contents/modules/iwresmanager/h -I/Applications/Marmalade.app/Contents/extensions/PVRTexTool/h -I/Applications/Marmalade.app/Contents/s3e/h -I/Applications/Marmalade.app/Contents/s3e/h/ext -I/Applications/Marmalade.app/Contents/s3e/h/std -I/Applications/Marmalade.app/Contents/s3e/h/std/c++ -I/Applications/Marmalade.app/Contents/s3e/h/ext_legacy -I/Applications/Marmalade.app/Contents/s3e/h/legacy -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources/i386 -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -DMAC_OS_X_VERSION_MIN_REQUIRED=1090 -fconstant-cfstrings -D__CONSTANT_CFSTRINGS__ -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -Wno-unused -Wno-parentheses -pipe -ffunction-sections -mstructure-size-boundary=8 -march=armv6 -mfloat-abi=soft -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC -g -O0 -gdwarf-2 -include temp_defines_debug.h -include temp_defines_debug.h -Wno-reorder -fvisibility-inlines-hidden -fno-exceptions -c /Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o36"EA48CE66-831F-40DE-8E8E-54BD1D024FEC-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp248"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o [1m/Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp[0m normal i386 c++ com.apple.compilers.marmaladecd05b2d370b6bb41^60b0d7d370b6bb41^-1"-0#0#1#-19%DVTDocumentLocation2@100"file:///Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp0000000000000000^3072"[1mCompileC[0m build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o [1m/Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp[0m normal i386 c++ com.apple.compilers.marmalade    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export LANG=en_US.US-ASCII    export MACOSX_DEPLOYMENT_TARGET=10.9    export NEXT_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-gcc -x c++ -fmessage-length=80 -pipe -Wno-trigraphs -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -gdwarf-2 -fvisibility-inlines-hidden -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/include -I/Applications/Marmalade.app/Contents/modules/iw2d/h -I/Applications/Marmalade.app/Contents/modules/iwgx/h -I/Applications/Marmalade.app/Contents/modules/iwgl/h -I/Applications/Marmalade.app/Contents/modules/iwutil/h -I/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/h -I/Applications/Marmalade.app/Contents/modules/third_party/zlib/h -I/Applications/Marmalade.app/Contents/modules/third_party/libpng/h -I/Applications/Marmalade.app/Contents/modules/iwgeom/h -I/Applications/Marmalade.app/Contents/modules/iwresmanager/h -I/Applications/Marmalade.app/Contents/extensions/PVRTexTool/h -I/Applications/Marmalade.app/Contents/modules/iwgxfont/h -I/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/source -I/Applications/Marmalade.app/Contents/s3e/h -I/Applications/Marmalade.app/Contents/s3e/h/ext -I/Applications/Marmalade.app/Contents/s3e/h/std -I/Applications/Marmalade.app/Contents/s3e/h/std/c++ -I/Applications/Marmalade.app/Contents/s3e/h/ext_legacy -I/Applications/Marmalade.app/Contents/s3e/h/legacy -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources/i386 -I/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/DerivedSources -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -DMAC_OS_X_VERSION_MIN_REQUIRED=1090 -fconstant-cfstrings -D__CONSTANT_CFSTRINGS__ -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -Wno-unused -Wno-parentheses -pipe -ffunction-sections -mstructure-size-boundary=8 -march=armv6 -mfloat-abi=soft -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC -g -O0 -gdwarf-2 -include temp_defines_debug.h -include temp_defines_debug.h -Wno-reorder -fvisibility-inlines-hidden -fno-exceptions -c /Applications/Marmalade.app/Contents/extensions/PVRTexTool/interface/PVRTexTool_interface.cpp -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/PVRTexTool_interface.o36"8AADED9D-BA02-459E-BE6D-BBF149D82919-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CLd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/learn.elf normal i386
-s464939060.575652
-e464939061.571651
+s464941268.693540
+e464941269.603269
 r1
 xLd
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug ARM/learn.elf
 xnormal
 xi386
 o
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug ARM/learn.elf49"[1mLd[0m build/Debug\ ARM/learn.elf normal i386e97d933468b6bb41^137d923568b6bb41^-1"-0#0#1#--2313"[1mLd[0m build/Debug\ ARM/learn.elf normal i386    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export MACOSX_DEPLOYMENT_TARGET=10.9    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-g++ -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -L/Applications/Marmalade.app/Contents/modules/iwgx/atitools -L/Applications/Marmalade.app/Contents/modules/iwgx/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgl/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwutil/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/zlib/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/libpng/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgeom/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwresmanager/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/s3e/lib/arm/v6/nofpu/soft -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -filelist /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/learn.LinkFileList -install_name /usr/local/lib/learn.elf -mmacosx-version-min=10.9 -dead_strip -Wl,--gc-sections -march=armv6 -mfloat-abi=soft -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -Wl,-Map=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/learn.map -Wl,--start-group -liwgx_d -liwgl_d -liwutil_d -ljpeg_d -lz_d -lpng_d -liwgeom_d -liwresmanager_d -ls3e_cpp_d -ls3e_d -ls3e_api_iwgl -lstdc++ -Wl,--end-group -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/learn_dependency_info.dat -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/learn.elf36"8EEE6003-034D-4A53-ADAD-61E22E00D26E-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug ARM/learn.elf49"[1mLd[0m build/Debug\ ARM/learn.elf normal i386b0afb1d470b6bb41^2d7b9ad570b6bb41^-1"-0#0#1#--2590"[1mLd[0m build/Debug\ ARM/learn.elf normal i386    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    export MACOSX_DEPLOYMENT_TARGET=10.9    /Users/aaronpiotrowski/.config/marmalade/root/s3e/bin/wrappers/arm-none-eabi-g++ -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -L/Applications/Marmalade.app/Contents/modules/iw2d/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgx/atitools -L/Applications/Marmalade.app/Contents/modules/iwgx/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgl/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwutil/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/zlib/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/libpng/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgeom/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwresmanager/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/iwgxfont/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/lib/arm/v6/nofpu/soft -L/Applications/Marmalade.app/Contents/s3e/lib/arm/v6/nofpu/soft -F/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM -filelist /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/learn.LinkFileList -install_name /usr/local/lib/learn.elf -mmacosx-version-min=10.9 -dead_strip -Wl,--gc-sections -march=armv6 -mfloat-abi=soft -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -Wl,-Map=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/learn.map -Wl,--start-group -liw2d_d -liwgx_d -liwgl_d -liwutil_d -ljpeg_d -lz_d -lpng_d -liwgeom_d -liwresmanager_d -liwgxfont_d -ltiniconv_d -ls3e_cpp_d -ls3e_d -ls3e_api_iwgl -lstdc++ -Wl,--end-group -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Objects-normal/i386/learn_dependency_info.dat -o /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug\ ARM/learn.elf36"07ADF7EE-CA2E-46BD-A096-0D013A3FC476-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh
-s464939061.573348
-e464939061.647109
+s464941269.604951
+e464941269.672880
 r1
 xPhaseScriptExecution
 x/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object0.sh
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Run custom shell script '/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python'193"[1mPhaseScriptExecution[0m /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh2c48933568b6bb41^eba9a53568b6bb41^---0#0#1#--434"[1mPhaseScriptExecution[0m /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh\"36"9E9D1989-9735-498A-BC6F-B9A777EDA1F4-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Run custom shell script '/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python'193"[1mPhaseScriptExecution[0m /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh3c509bd570b6bb41^0b43acd570b6bb41^---0#0#1#--434"[1mPhaseScriptExecution[0m /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh\"36"8BBA7E2A-7ABA-43CB-AA51-757AD86835ED-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object0.sh
 s464939024.332625
@@ -1338,89 +1485,89 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Run cu
 b16965CD2-81C5-4C64-91F1-EFAC0D496BFF
 
 CPhaseScriptExecution /usr/bin/python /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh
-s464939061.649131
-e464939061.667793
+s464941269.674395
+e464941269.691066
 r1
 xPhaseScriptExecution
 x/usr/bin/python
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object1.sh
 oskipping for arm and aarch64 builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Run custom shell script '/usr/bin/python'116"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh1ea5a63568b6bb41^280fab3568b6bb41^-36"skipping for arm and aarch64 builds1(21%IDEActivityLogMessage2@36"skipping for arm and aarch64 builds-464939061#0#36#-0#-----0#0#1#--357"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh\"36"F71D07E6-C248-4F53-AECC-FD0598D51682-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Run custom shell script '/usr/bin/python'116"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh0116add570b6bb41^07eab0d570b6bb41^-36"skipping for arm and aarch64 builds1(21%IDEActivityLogMessage2@36"skipping for arm and aarch64 builds-464941269#0#36#-0#-----0#0#1#--357"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object1.sh\"36"AD0A064F-64D3-4367-B473-26BA4438A8F2-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution /usr/bin/python /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.sh
-s464939061.669089
-e464939061.688879
+s464941269.692381
+e464941269.708193
 r1
 xPhaseScriptExecution
 x/usr/bin/python
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object2.sh
 oskipping for debug builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Run custom shell script '/usr/bin/python'116"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.shddb6ab3568b6bb41^fb5db03568b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464939061#0#26#-0#-----0#0#1#--357"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.sh\"36"B526F81B-04F7-4822-8485-772AFCA9AC84-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Run custom shell script '/usr/bin/python'116"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.shd1afb1d570b6bb41^596ab5d570b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464941269#0#26#-0#-----0#0#1#--357"[1mPhaseScriptExecution[0m /usr/bin/python build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object2.sh\"36"377D2108-89FA-4E55-B151-6CE44BEC8632-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh
-s464939061.690199
-e464939061.707814
+s464941269.713012
+e464941269.729072
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object3.sh
 oskipping for arm and aarch64 builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.shab25b13568b6bb41^9929b53568b6bb41^-36"skipping for arm and aarch64 builds1(21%IDEActivityLogMessage2@36"skipping for arm and aarch64 builds-464939061#0#36#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh\"36"CCA99C27-E9F3-4115-A399-E31B19F30C5A-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh61fab6d570b6bb41^bcafbad570b6bb41^-36"skipping for arm and aarch64 builds1(21%IDEActivityLogMessage2@36"skipping for arm and aarch64 builds-464941269#0#36#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object3.sh\"36"9EE9C430-8BF7-4EA6-9262-33135009BAFC-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh
-s464939061.710534
-e464939061.773559
+s464941269.731214
+e464941269.747196
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object4.sh
 oskipping for debug builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.shed29bd3568b6bb41^9222c63568b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464939061#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh\"36"13494824-5D1F-47AB-904F-53BAED2EBAED-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh65c2bbd570b6bb41^cd59bfd570b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464941269#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object4.sh\"36"29918FCF-D7B3-4A7B-AF91-32639E7333B5-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh
-s464939061.776573
-e464939061.934378
+s464941269.753819
+e464941269.856035
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object5.sh
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh8c4dc73568b6bb41^8a1fef3568b6bb41^---0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh\"36"1E3F4B7D-8D09-4F9A-971A-85D29AF3A087-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh4373c1d570b6bb41^4d31dbd570b6bb41^---0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object5.sh\"36"1A9EA9E4-054A-4A1E-A949-90C6EEA2D925-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh
-s464939061.936272
-e464939061.960442
+s464941269.858876
+e464941269.879326
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object6.sh
 oskipping for debug builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh7768f03568b6bb41^91f0f53568b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464939061#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh\"36"497A2CF6-27BC-43BC-A8E4-70D65D3DCFF8-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sha968dcd570b6bb41^768ae1d570b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464941269#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object6.sh\"36"15B2984D-5AAD-4314-8CB1-26F740339CD9-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh
-s464939061.962699
-e464939061.980833
+s464941269.881236
+e464941269.900755
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object7.sh
 oskipping for x86 and arm builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh25e9f63568b6bb41^342bfb3568b6bb41^-32"skipping for x86 and arm builds1(21%IDEActivityLogMessage2@32"skipping for x86 and arm builds-464939061#0#32#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh\"36"635A047D-38E4-4B2F-AB64-BCBB73F136DE-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.shde1ce2d570b6bb41^e7a9e6d570b6bb41^-32"skipping for x86 and arm builds1(21%IDEActivityLogMessage2@32"skipping for x86 and arm builds-464941269#0#32#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object7.sh\"36"291E7CBF-9A54-4A28-A338-3A2F94423B3E-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 
 CPhaseScriptExecution s3e_plink /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh
-s464939061.983127
-e464939062.001419
+s464941269.904977
+e464941269.924782
 r1
 xPhaseScriptExecution
 xs3e_plink
 x/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug ARM/learn.build/Script-shell_script_object8.sh
 oskipping for debug builds
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh4645fc3568b6bb41^9964003668b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464939062#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh\"36"A4CF84A1-2E1F-4BDC-A79B-9BF8E10A6534-
-bA598B97A-08DD-4EC3-8A78-EAE11D622E97
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Run custom shell script 's3e_plink'110"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh0132e8d570b6bb41^da39edd570b6bb41^-26"skipping for debug builds1(21%IDEActivityLogMessage2@26"skipping for debug builds-464941269#0#26#-0#-----0#0#1#--351"[1mPhaseScriptExecution[0m s3e_plink build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh    cd /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode    /bin/sh -c \"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/learn.build/Debug\ ARM/learn.build/Script-shell_script_object8.sh\"36"B81D56EE-6BD9-49B2-BF6F-DBACF7BBB991-
+bF3133F50-30FF-4E66-8F5C-31E5BBF7D3C3
 

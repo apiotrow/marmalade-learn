@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A0000000000000000000001c /* PVRTexTool_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001d /* PVRTexTool_interface.cpp */; };
 		A0000000000000000000032c /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000032d /* Main.cpp */; };
+		CAD78E871BB67150005DC8A4 /* LSystemGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAD78E851BB67150005DC8A4 /* LSystemGen.cpp */; };
+		CAD78E931BB67B57005DC8A4 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = CAD78E921BB67B57005DC8A4 /* sprites */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -21,7 +23,7 @@
 			outputFiles = (
 				"${INPUT_FILE_BASE}.stamp",
 			);
-			script = "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Applications/Marmalade.app/Contents/modules/iwgx/tools/compile_shaders.py \"${INPUT_FILE_DIR}/${INPUT_FILE_NAME}\"";
+			script = "/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Applications/Marmalade.app/Contents/modules/iwgx/tools/compile_shaders.py \"${INPUT_FILE_DIR}/${INPUT_FILE_NAME}\"";
 		};
 /* End PBXBuildRule section */
 
@@ -427,6 +429,9 @@
 		B0000000000000000000034e /* development.icf */ = {isa = PBXFileReference; lastKnownFileType = text; name = development.icf; path = /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/development.icf; sourceTree = "<absolute>"; };
 		B00000000000000000000350 /* ident.free */ = {isa = PBXFileReference; lastKnownFileType = text; name = ident.free; path = /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/ident.free; sourceTree = "<absolute>"; };
 		B00000000000000000000352 /* s3e.icf */ = {isa = PBXFileReference; lastKnownFileType = text; name = s3e.icf; path = /Applications/Marmalade.app/Contents/s3e/s3e.icf; sourceTree = "<absolute>"; };
+		CAD78E851BB67150005DC8A4 /* LSystemGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSystemGen.cpp; sourceTree = "<group>"; };
+		CAD78E861BB67150005DC8A4 /* LSystemGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSystemGen.h; sourceTree = "<group>"; };
+		CAD78E921BB67B57005DC8A4 /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = ../data/sprites; sourceTree = "<group>"; };
 		ref_learn_dylib /* learn.s86 */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = learn.s86; path = learn.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -444,6 +449,7 @@
 		A0000000000000000000000f /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				CAD78E881BB677C3005DC8A4 /* source */,
 				B00000000000000000000010 /* Resources */,
 				B00000000000000000000011 /* Frameworks */,
 				B00000000000000000000012 /* Products */,
@@ -455,7 +461,6 @@
 				C0000000000000000000016b /* (zlib) */,
 				C00000000000000000000173 /* 'Marmalade System (S3E)' */,
 				C00000000000000000000325 /* (s3e-default) */,
-				B0000000000000000000032d /* Main.cpp */,
 				C00000000000000000000330 /* 'generated files' */,
 				B00000000000000000000344 /* app.config.txt */,
 				B00000000000000000000346 /* app.icf */,
@@ -467,6 +472,7 @@
 		B00000000000000000000010 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CAD78E921BB67B57005DC8A4 /* sprites */,
 				B0000000000000000000034a /* app.config.txt */,
 				B0000000000000000000034c /* app.icf */,
 				B0000000000000000000034e /* development.icf */,
@@ -479,13 +485,13 @@
 		B00000000000000000000011 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C00000000000000000000021 /* iw2d */,
 				C0000000000000000000002a /* iwgeom */,
 				C00000000000000000000073 /* iwgl */,
 				C0000000000000000000007c /* iwgx */,
 				C000000000000000000000af /* iwgxfont */,
 				C000000000000000000000c2 /* iwresmanager */,
 				C000000000000000000000d7 /* iwutil */,
-				C00000000000000000000021 /* iw2d */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1114,6 +1120,16 @@
 			name = "'generated files'";
 			sourceTree = "<group>";
 		};
+		CAD78E881BB677C3005DC8A4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000032d /* Main.cpp */,
+				CAD78E851BB67150005DC8A4 /* LSystemGen.cpp */,
+				CAD78E861BB67150005DC8A4 /* LSystemGen.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1124,7 +1140,7 @@
 				resourcesobject /* Resources */,
 				sourcesobject /* Sources */,
 				frameworksobject /* Frameworks */,
-				shell_script_object0 /* /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python */,
+				shell_script_object0 /* /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python */,
 				shell_script_object1 /* /usr/bin/python */,
 				shell_script_object2 /* /usr/bin/python */,
 				shell_script_object3 /* s3e_plink */,
@@ -1173,25 +1189,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD78E931BB67B57005DC8A4 /* sprites in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		shell_script_object0 /* /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python */ = {
+		shell_script_object0 /* /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python;
+			name = /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "set -e\nexport GCC_THUMB_SUPPORT='NO'\nPATH=\"/Applications/Marmalade.app/Contents/tools/gcc/x86/android_osx/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/gcc/darwin/aarch64/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/gcc/darwin/arm/bin\":$PATH\nPATH=\"/usr/bin\":$PATH\nPATH=\"/Applications/Xcode.app/Contents/Developer/usr/bin\":$PATH\nPATH=\"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\":$PATH\nPATH=\"/opt/local/bin\":$PATH\ncd \"/Applications/Marmalade.app/Contents/s3e/tools\"\n/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python ./process_map.py \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}\"";
+			shellScript = "set -e\nexport GCC_THUMB_SUPPORT='NO'\nPATH=\"/Applications/Marmalade.app/Contents/tools/gcc/x86/android_osx/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/gcc/darwin/aarch64/bin\":$PATH\nPATH=\"/Applications/Marmalade.app/Contents/s3e/gcc/darwin/arm/bin\":$PATH\nPATH=\"/usr/bin\":$PATH\nPATH=\"/Applications/Xcode.app/Contents/Developer/usr/bin\":$PATH\nPATH=\"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\":$PATH\nPATH=\"/opt/local/bin\":$PATH\ncd \"/Applications/Marmalade.app/Contents/s3e/tools\"\n/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python ./process_map.py \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}\"";
 			showEnvVarsInLog = 0;
 		};
 		shell_script_object1 /* /usr/bin/python */ = {
@@ -1322,6 +1339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0000000000000000000001c /* PVRTexTool_interface.cpp in Sources */,
+				CAD78E871BB67150005DC8A4 /* LSystemGen.cpp in Sources */,
 				A0000000000000000000032c /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,6 +2,7 @@
 #include "Iw2D.h"
 #include "s3eConfig.h"
 #include "s3eDevice.h"
+#include "LSystemGen.h"
 
 //declare functions beforehand so main can access them
 void drawText(char* mess);
@@ -30,6 +31,9 @@ int main()
     //display text using marmalde's built-in font
     IwGxPrintSetScale(3); //make text 3x size
     
+    // Create an image from a PNG file
+    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
+    
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
@@ -42,6 +46,12 @@ int main()
         drawPolys();
         drawText(message);
         
+        // Draw an image
+        Iw2DDrawImage(image, CIwFVec2::g_Zero);
+        
+        LSystemGen lsystem;
+//        lsystem.genFractal();
+        
         
         //causes marmalade engine to process all the drawing requests we've made
         IwGxFlush();
@@ -50,9 +60,12 @@ int main()
         IwGxSwapBuffers();
     }
     
+    delete image;
+    
     //Terminate modules being used
     Iw2DTerminate();
     IwGxTerminate();
+    
     
     // Return
     return 0;
