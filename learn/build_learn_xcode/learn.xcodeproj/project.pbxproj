@@ -479,6 +479,12 @@
 		B00000000000000000000011 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0000000000000000000002a /* iwgeom */,
+				C00000000000000000000073 /* iwgl */,
+				C0000000000000000000007c /* iwgx */,
+				C000000000000000000000af /* iwgxfont */,
+				C000000000000000000000c2 /* iwresmanager */,
+				C000000000000000000000d7 /* iwutil */,
 				C00000000000000000000021 /* iw2d */,
 			);
 			name = Frameworks;
@@ -522,12 +528,6 @@
 		C00000000000000000000020 /* 'Marmalade Studio' */ = {
 			isa = PBXGroup;
 			children = (
-				C0000000000000000000002a /* iwgeom */,
-				C00000000000000000000073 /* iwgl */,
-				C0000000000000000000007c /* iwgx */,
-				C000000000000000000000af /* iwgxfont */,
-				C000000000000000000000c2 /* iwresmanager */,
-				C000000000000000000000d7 /* iwutil */,
 			);
 			name = "'Marmalade Studio'";
 			sourceTree = "<group>";

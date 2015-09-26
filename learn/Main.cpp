@@ -1,9 +1,11 @@
-
 #include "IwGx.h"
 #include "Iw2D.h"
 #include "s3eConfig.h"
 #include "s3eDevice.h"
 
+//declare functions beforehand so main can access them
+void drawText(char* mess);
+void drawPolys();
 
 // Main entry point for the application
 //doesn't take params as most C++ programs do, because a marmalade program will never take command-line arguments
@@ -37,13 +39,9 @@ int main()
         IwGxClear(); //clear screen
         
         
+        drawPolys();
+        drawText(message);
         
-        Iw2DSetColour(0xffff0000); // Set blue
-        Iw2DFillRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Fill blue
-        Iw2DSetColour(0xff0000ff); // Set red
-        Iw2DDrawRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Draw red outline
-        
-        IwGxPrintString(10, 10, message); //print string at specified x,y coords
         
         //causes marmalade engine to process all the drawing requests we've made
         IwGxFlush();
@@ -52,11 +50,22 @@ int main()
         IwGxSwapBuffers();
     }
     
-    Iw2DTerminate();
-
     //Terminate modules being used
+    Iw2DTerminate();
     IwGxTerminate();
     
     // Return
     return 0;
 }
+
+void drawText(char* mess){
+    IwGxPrintString(10, 10, mess); //print string at specified x,y coords
+}
+
+void drawPolys(){
+    Iw2DSetColour(0xffff0000); // Set blue
+    Iw2DFillRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Fill blue
+    Iw2DSetColour(0xff0000ff); // Set red
+    Iw2DDrawRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Draw red outline
+}
+

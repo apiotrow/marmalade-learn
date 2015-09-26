@@ -814,7 +814,7 @@
 [810] /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
 # Sections:
 # Address	Size    	Segment	Section
-0x00000760	0x0011D24B	__TEXT	__text
+0x00000750	0x0011D25B	__TEXT	__text
 0x0011D9AC	0x00000042	__TEXT	__symbol_stub
 0x0011D9F0	0x0000007A	__TEXT	__stub_helper
 0x0011DA6C	0x00024B45	__TEXT	__cstring
@@ -830,11 +830,13 @@
 0x00E63E00	0x00015140	__DATA	__common
 # Symbols:
 # Address	Size    	File  Name
-0x00000760	0x000000A0	[  1] _PVRTexToolConvert
-0x00000800	0x000000D0	[  1] __ZL8_extLoadv
-0x000008D0	0x0000008D	[  1] _PVRTexToolFree
-0x00000960	0x000002E0	[  2] _main
-0x00000C40	0x00000170	[  2] __ZL9IwGxClearj
+0x00000750	0x000000A0	[  1] _PVRTexToolConvert
+0x000007F0	0x000000D0	[  1] __ZL8_extLoadv
+0x000008C0	0x0000008D	[  1] _PVRTexToolFree
+0x00000950	0x000001B0	[  2] _main
+0x00000B00	0x00000170	[  2] __ZL9IwGxClearj
+0x00000C70	0x000000F0	[  2] __Z9drawPolysv
+0x00000D60	0x00000050	[  2] __Z8drawTextPc
 0x00000DB0	0x0000000B	[  2] __ZL11IwDebugExitv
 0x00000DC0	0x00000050	[  2] __ZN8CIwFVec2C1Eff
 0x00000E10	0x0000003B	[  2] __ZN8CIwFVec2C2Eff
