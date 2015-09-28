@@ -3,10 +3,19 @@
 #include "s3eConfig.h"
 #include "s3eDevice.h"
 #include "LSystemGen.h"
+#include "s3ePointer.h"
+#include <iostream>
+using namespace std;
 
 //declare functions beforehand so main can access them
 void drawText(char* mess);
 void drawPolys();
+void MultiTouchButtonCB(s3ePointerTouchEvent* event);
+
+bool prevTouched = false;
+bool touched = false;
+int m_X = 0;
+int m_Y = 0;
 
 // Main entry point for the application
 //doesn't take params as most C++ programs do, because a marmalade program will never take command-line arguments
@@ -33,6 +42,12 @@ int main()
     
     // Create an image from a PNG file
     CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
+    CIwFVec2    image_position = CIwFVec2::g_Zero;
+    
+
+    
+    s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, (s3eCallback)MultiTouchButtonCB, 0);
+//    s3ePointerRegister(S3E_POINTER_TOUCH_MOTION_EVENT, (s3eCallback)MultiTouchMotionCB, 0)
     
 
     // Loop forever, until the user or the OS performs some action to quit the app
@@ -43,14 +58,42 @@ int main()
         IwGxClear(); //clear screen
         
         
+        
+        
+        
         drawPolys();
         drawText(message);
         
-        // Draw an image
-        Iw2DDrawImage(image, CIwFVec2::g_Zero);
+        
+        
+        
+        
+
         
         LSystemGen lsystem;
 //        lsystem.genFractal();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //input
+        s3ePointerUpdate();
+        if(!touched && prevTouched){
+            image_position.x = (float)m_X;
+            image_position.y = (float)m_Y;
+            
+        }
+        
+        char c = image_position.x;
+        char message[S3E_CONFIG_STRING_MAX] = {c};
+        // Draw an image
+        Iw2DDrawImage(image, image_position);
+        
         
         
         //causes marmalade engine to process all the drawing requests we've made
@@ -82,3 +125,10 @@ void drawPolys(){
     Iw2DDrawRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Draw red outline
 }
 
+void MultiTouchButtonCB(s3ePointerTouchEvent* event)
+{
+    prevTouched = touched;
+    touched = event->m_Pressed != 0;
+    m_X = event->m_x;
+    m_Y = event->m_y;
+}
