@@ -6,11 +6,8 @@
 #bracketed things cause solution explorer to put them in subsections
 files
 {
-    [source]
     (source)
     Main.cpp
-    LSystemGen.cpp
-    LSystemGen.h
 }
 
 #libraries we're using

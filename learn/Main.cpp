@@ -2,7 +2,7 @@
 #include "Iw2D.h"
 #include "s3eConfig.h"
 #include "s3eDevice.h"
-#include "LSystemGen.h"
+//#include "LSystemGen.h"
 #include "s3ePointer.h"
 #include <iostream>
 using namespace std;
@@ -70,7 +70,7 @@ int main()
         
 
         
-        LSystemGen lsystem;
+//        LSystemGen lsystem;
 //        lsystem.genFractal();
         
         
