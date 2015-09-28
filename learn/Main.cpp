@@ -5,12 +5,14 @@
 //#include "LSystemGen.h"
 #include "s3ePointer.h"
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 //declare functions beforehand so main can access them
 void drawText(char* mess);
 void drawPolys();
 void MultiTouchButtonCB(s3ePointerTouchEvent* event);
+void ButtonTouchButtonCB(s3ePointerTouchEvent* event);
 
 bool prevTouched = false;
 bool touched = false;
@@ -44,10 +46,18 @@ int main()
     CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
     CIwFVec2    image_position = CIwFVec2::g_Zero;
     
+    if (s3ePointerGetInt(S3E_POINTER_MULTI_TOUCH_AVAILABLE) != 0)
+    {
+        s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, (s3eCallback)MultiTouchButtonCB, 0);
+    }
+    else
+    {
+        s3ePointerRegister(S3E_POINTER_BUTTON_EVENT, (s3eCallback)ButtonTouchButtonCB, 0);
+    }
 
     
-    s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, (s3eCallback)MultiTouchButtonCB, 0);
-//    s3ePointerRegister(S3E_POINTER_TOUCH_MOTION_EVENT, (s3eCallback)MultiTouchMotionCB, 0)
+    
+    
     
 
     // Loop forever, until the user or the OS performs some action to quit the app
@@ -88,11 +98,18 @@ int main()
             image_position.y = (float)m_Y;
             
         }
-        
-        char c = image_position.x;
-        char message[S3E_CONFIG_STRING_MAX] = {c};
-        // Draw an image
+    
+        //print to console
+        std::ostringstream buff;
+        buff<<image_position.x;
+        cout << buff.str() + "\n";
+
         Iw2DDrawImage(image, image_position);
+        
+        
+        
+        
+        
         
         
         
@@ -127,6 +144,13 @@ void drawPolys(){
 
 void MultiTouchButtonCB(s3ePointerTouchEvent* event)
 {
+    prevTouched = touched;
+    touched = event->m_Pressed != 0;
+    m_X = event->m_x;
+    m_Y = event->m_y;
+}
+
+void ButtonTouchButtonCB(s3ePointerTouchEvent* event){
     prevTouched = touched;
     touched = event->m_Pressed != 0;
     m_X = event->m_x;

@@ -6,7 +6,6 @@
 #bracketed things cause solution explorer to put them in subsections
 files
 {
-    (source)
     Main.cpp
 }
 
