@@ -48,7 +48,8 @@ int main()
     
     // Create an image from a PNG file
     CSprite* spriteOne = new CSprite();
-    spriteOne->SetImage(Iw2DCreateImage("sprites/face2.png"));
+    CIw2DImage* face2 = Iw2DCreateImage("sprites/face2.png");
+    spriteOne->SetImage(face2);
     spriteOne->m_X = (float)IwGxGetScreenWidth() / 2;
     spriteOne->m_Y = (float)IwGxGetScreenHeight() / 2;
     spriteOne->m_W = spriteOne->GetImage()->GetWidth();
@@ -150,12 +151,16 @@ int main()
     }
     
 //    delete image;
-    delete spriteOne;
     
+
+//    spriteOne->~CSprite();
+    delete spriteOne;
+    delete face2;
+
     //Terminate modules being used
     Iw2DTerminate();
     IwGxTerminate();
-    
+
     
     // Return
     return 0;
