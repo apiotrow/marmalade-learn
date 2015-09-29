@@ -4,9 +4,9 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['/Applications/Marmalade.app/Contents/s3e/makefile_builder/mkb.py', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb', '--deploy-only', '--hub-data', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/project_learn/mkb-scons.txt', '--buildenv=SCONS']
+cmdline = ['/Applications/Marmalade.app/Contents/s3e/makefile_builder/mkb.py', '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb', '--buildenv=SCONS', '--release', '--x86', '--android-x86', '--no-ide', '--make', '--deploy-only']
 mkb = '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/learn.mkb'
-mkf = ['/Applications/Marmalade.app/Contents/s3e/s3e-default.mkf', '/Applications/Marmalade.app/Contents/modules/iw2d/iw2d.mkf', '/Applications/Marmalade.app/Contents/modules/iwgx/iwgx.mkf', '/Applications/Marmalade.app/Contents/modules/iwgl/iwgl.mkf', '/Applications/Marmalade.app/Contents/modules/iwutil/iwutil.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/libjpeg.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libpng/libpng.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/zlib/zlib.mkf', '/Applications/Marmalade.app/Contents/modules/iwgeom/iwgeom.mkf', '/Applications/Marmalade.app/Contents/modules/iwresmanager/iwresmanager.mkf', '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/PVRTexTool.mkf', '/Applications/Marmalade.app/Contents/modules/iwgxfont/iwgxfont.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/tiniconv.mkf']
+mkf = ['/Applications/Marmalade.app/Contents/s3e/s3e-default.mkf', '/Applications/Marmalade.app/Contents/modules/iw2d/iw2d.mkf', '/Applications/Marmalade.app/Contents/modules/iwgx/iwgx.mkf', '/Applications/Marmalade.app/Contents/modules/iwgl/iwgl.mkf', '/Applications/Marmalade.app/Contents/modules/iwutil/iwutil.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libjpeg/libjpeg.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/libpng/libpng.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/zlib/zlib.mkf', '/Applications/Marmalade.app/Contents/modules/iwgeom/iwgeom.mkf', '/Applications/Marmalade.app/Contents/modules/iwresmanager/iwresmanager.mkf', '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/PVRTexTool.mkf', '/Applications/Marmalade.app/Contents/modules/iwgxfont/iwgxfont.mkf', '/Applications/Marmalade.app/Contents/modules/third_party/tiniconv/tiniconv.mkf', '/Applications/Marmalade.app/Contents/modules/iw2dscenegraph/iw2dscenegraph.mkf', '/Applications/Marmalade.app/Contents/modules/iw2dscenegraphcore/iw2dscenegraphcore.mkf']
 
 class DeployConfig(object):
     pass
@@ -113,8 +113,8 @@ class DefaultConfig(DeployConfig):
                    'release' : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/release/learn.so',
                  },
          'x86' : {
-                   'debug'   : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/debug/learn.s86',
-                   'release' : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/release/learn.s86',
+                   'debug'   : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/debug/learn.so',
+                   'release' : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/release/learn.so',
                  },
         }
     arm_arch = ''

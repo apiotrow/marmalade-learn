@@ -6,7 +6,11 @@
 #include "s3ePointer.h"
 #include <iostream>
 #include <sstream>
+#include <list>
+#include "Iw2DSceneGraph.h"
 using namespace std;
+using namespace Iw2DSceneGraphCore;
+using namespace Iw2DSceneGraph;
 
 //declare functions beforehand so main can access them
 void drawText(char* mess);
@@ -43,9 +47,19 @@ int main()
     IwGxPrintSetScale(3); //make text 3x size
     
     // Create an image from a PNG file
-    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
-    CIwFVec2    image_position = CIwFVec2::g_Zero;
+    CSprite* spriteOne = new CSprite();
+    spriteOne->SetImage(Iw2DCreateImage("sprites/face2.png"));
+    spriteOne->m_X = (float)IwGxGetScreenWidth() / 2;
+    spriteOne->m_Y = (float)IwGxGetScreenHeight() / 2;
+    spriteOne->m_W = spriteOne->GetImage()->GetWidth();
+    spriteOne->m_H = spriteOne->GetImage()->GetHeight();
+    spriteOne->m_AnchorX = 0.5; //anchor within the image itself
+    spriteOne->m_AnchorY = 0.5;
     
+//    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
+//    CIwFVec2    image_position = CIwFVec2::g_Zero;
+    
+    //if we're on computer and only have mouse, set input for that. if we're on a touch screen, set input for that
     if (s3ePointerGetInt(S3E_POINTER_MULTI_TOUCH_AVAILABLE) != 0)
     {
         s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, (s3eCallback)MultiTouchButtonCB, 0);
@@ -71,19 +85,14 @@ int main()
         
         
         
+        
         drawPolys();
         drawText(message);
         
         
         
         
-        
 
-        
-//        LSystemGen lsystem;
-//        lsystem.genFractal();
-        
-        
         
         
         
@@ -93,18 +102,38 @@ int main()
         
         //input
         s3ePointerUpdate();
+        //this means user has let up from a touch
         if(!touched && prevTouched){
-            image_position.x = (float)m_X;
-            image_position.y = (float)m_Y;
+            spriteOne->m_X = (float)m_X;
+            spriteOne->m_Y = (float)m_Y;
+//            image_position.x = (float)m_X;
+//            image_position.y = (float)m_Y;
             
+            touched = false;
+            prevTouched = false;
         }
     
         //print to console
         std::ostringstream buff;
-        buff<<image_position.x;
-        cout << buff.str() + "\n";
+//        buff<<image_position.x;
+        buff<<spriteOne->m_X;
+        string string_xpos = buff.str();
+        buff.str("");
+        buff.clear();
+//        buff<<image_position.y;
+        buff<<spriteOne->m_Y;
+        string string_ypos = buff.str();
+        cout << string_xpos + ", " + string_ypos + "\n";
 
-        Iw2DDrawImage(image, image_position);
+//        Iw2DDrawImage(image, image_position);
+        
+        spriteOne->Update((30.0f / 1000.0f), 1);
+        spriteOne->Render();
+        
+        
+        
+        
+        
         
         
         
@@ -120,7 +149,8 @@ int main()
         IwGxSwapBuffers();
     }
     
-    delete image;
+//    delete image;
+    delete spriteOne;
     
     //Terminate modules being used
     Iw2DTerminate();
@@ -142,6 +172,7 @@ void drawPolys(){
     Iw2DDrawRect(CIwFVec2(0, 0), CIwFVec2(10,10)); // Draw red outline
 }
 
+//fill in values for multi-touch screens
 void MultiTouchButtonCB(s3ePointerTouchEvent* event)
 {
     prevTouched = touched;
@@ -150,9 +181,24 @@ void MultiTouchButtonCB(s3ePointerTouchEvent* event)
     m_Y = event->m_y;
 }
 
+//fill in vars from single click systems
 void ButtonTouchButtonCB(s3ePointerTouchEvent* event){
     prevTouched = touched;
     touched = event->m_Pressed != 0;
     m_X = event->m_x;
     m_Y = event->m_y;
+}
+
+
+
+
+
+
+class Scene : public CNode{
+    Scene();
+};
+
+Scene::Scene()
+{
+    
 }
