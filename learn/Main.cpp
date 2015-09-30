@@ -46,9 +46,13 @@ int main()
     //display text using marmalde's built-in font
     IwGxPrintSetScale(3); //make text 3x size
     
+    
+    
+    
+    
     // Create an image from a PNG file
     CSprite* spriteOne = new CSprite();
-    CIw2DImage* face2 = Iw2DCreateImage("sprites/face2.png");
+    CIw2DImage* face2 = Iw2DCreateImage("sprites/face2.png"); //must be declared separately so we can delete it (can't be created within the parens in the call below)
     spriteOne->SetImage(face2);
     spriteOne->m_X = (float)IwGxGetScreenWidth() / 2;
     spriteOne->m_Y = (float)IwGxGetScreenHeight() / 2;
@@ -56,6 +60,31 @@ int main()
     spriteOne->m_H = spriteOne->GetImage()->GetHeight();
     spriteOne->m_AnchorX = 0.5; //anchor within the image itself
     spriteOne->m_AnchorY = 0.5;
+    
+    
+    
+    
+    //text using CLabel
+    CLabel* labelOne = new CLabel();
+    labelOne->m_X = (float)IwGxGetScreenWidth() / 2;
+    labelOne->m_Y = ((float)IwGxGetScreenHeight() / 2) - 50;
+    labelOne->m_W = 30;
+    labelOne->m_H = 100;
+    labelOne->m_Text = "GAME TITLE";
+    labelOne->m_AlignHor = IW_2D_FONT_ALIGN_LEFT;
+    labelOne->m_AlignVer = IW_2D_FONT_ALIGN_TOP;
+    CIw2DFont* fontOne = Iw2DCreateFont("fonts/fontTwo.gxfont");
+    labelOne->m_Font = fontOne;
+    labelOne->m_ScaleX = 3;
+//    labelOne->m_Color = CColor(100,149,237,1);
+//    labelOne->m_Color = CColor(0xff, 0xff, 0x30, 0xff);
+    //have to use AddChild to make it part of scenes hierarchy
+//    spriteOne->AddChild(labelOne);
+    
+    
+    
+    
+    
     
 //    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
 //    CIwFVec2    image_position = CIwFVec2::g_Zero;
@@ -87,7 +116,7 @@ int main()
         
         
         
-        drawPolys();
+//        drawPolys();
         drawText(message);
         
         
@@ -131,6 +160,9 @@ int main()
         spriteOne->Update((30.0f / 1000.0f), 1);
         spriteOne->Render();
         
+        labelOne->Update((30.0f / 1000.0f), 1);
+        labelOne->Render();
+        
         
         
         
@@ -150,12 +182,11 @@ int main()
         IwGxSwapBuffers();
     }
     
-//    delete image;
-    
 
-//    spriteOne->~CSprite();
     delete spriteOne;
     delete face2;
+    delete fontOne;
+    delete labelOne;
 
     //Terminate modules being used
     Iw2DTerminate();
