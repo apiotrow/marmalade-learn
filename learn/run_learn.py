@@ -10,5 +10,5 @@ if os.name == 'nt':
 cmd = list(sys.argv)
 cmd[0] = exe
 
-cmd.append('-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_x86/learn_release.via"')
+cmd.append('-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_scons_aarch64/learn_gcc_aarch64_release.via"')
 os.execvp(cmd[0], cmd)

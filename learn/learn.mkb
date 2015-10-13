@@ -18,6 +18,7 @@ subprojects
     iwgl
     iw2dscenegraph
     iw2dscenegraphcore
+    iwtween
 
     #marmalde graphics module
     iwgx

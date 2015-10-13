@@ -8,20 +8,30 @@
 #include <sstream>
 #include <list>
 #include "Iw2DSceneGraph.h"
+#include "IwTween.h"
+
 using namespace std;
 using namespace Iw2DSceneGraphCore;
 using namespace Iw2DSceneGraph;
+using namespace IwTween;
 
 //declare functions beforehand so main can access them
 void drawText(char* mess);
 void drawPolys();
 void MultiTouchButtonCB(s3ePointerTouchEvent* event);
 void ButtonTouchButtonCB(s3ePointerTouchEvent* event);
+void nothing();
 
 bool prevTouched = false;
 bool touched = false;
 int m_X = 0;
 int m_Y = 0;
+
+// FRAME_TIME is the amount of time that a single frame should last in seconds
+#define FRAME_TIME  (30.0f / 1000.0f)
+
+//// Global tweener is used by tweens that ned to be ran outside of a scene
+CTweenManager*  g_pTweener = 0;
 
 // Main entry point for the application
 //doesn't take params as most C++ programs do, because a marmalade program will never take command-line arguments
@@ -33,6 +43,16 @@ int main()
     IwGxInit();
     //don't forget this if drawing primitives with iw2d
     Iw2DInit();
+    
+    
+    
+    
+    
+    // Create global tween manager
+    g_pTweener = new CTweenManager();
+    
+    
+    
 
     
     //const char* = {s3eDeviceGetString(S3E_DEVICE_OS)};
@@ -89,6 +109,7 @@ int main()
 //    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
 //    CIwFVec2    image_position = CIwFVec2::g_Zero;
     
+    //setting up listener functions
     //if we're on computer and only have mouse, set input for that. if we're on a touch screen, set input for that
     if (s3ePointerGetInt(S3E_POINTER_MULTI_TOUCH_AVAILABLE) != 0)
     {
@@ -102,7 +123,10 @@ int main()
     
     
     
-    
+//    float old_sprite_X;
+//    float old_sprite_Y;
+//    float new_sprite_X;
+//    float new_sprite_Y;
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
@@ -111,6 +135,13 @@ int main()
         
         IwGxClear(); //clear screen
         
+        
+
+        
+        
+        
+        // Update global tween manager
+        g_pTweener->Update(FRAME_TIME);
         
         
         
@@ -134,8 +165,31 @@ int main()
         s3ePointerUpdate();
         //this means user has let up from a touch
         if(!touched && prevTouched){
-            spriteOne->m_X = (float)m_X;
-            spriteOne->m_Y = (float)m_Y;
+//            old_sprite_X = spriteOne->m_X;
+//            old_sprite_Y = spriteOne->m_Y;
+//            new_sprite_X = (float)m_X;
+//            new_sprite_Y = (float)m_Y;
+            
+            g_pTweener->Tween(2.0f,
+                              FLOAT, &spriteOne->m_X, (float)m_X,
+                              FLOAT, &spriteOne->m_Y,(float)m_Y,
+                              EASING, Ease::linear,
+//                              ONCOMPLETE, nothing,
+                              END);
+            
+//            g_pTweener->Tween(2.0f,
+//                              FLOAT, &spriteOne->m_Y,
+//                              FLOAT, (float)m_Y,
+//                              EASING, Ease::sineIn,
+//                              ONCOMPLETE, nothing,
+//                              END);
+            
+//            spriteOne->m_X = (float)m_X;
+//            spriteOne->m_Y = (float)m_Y;
+            
+
+//            spriteOne->m_X = (float)m_X;
+//            spriteOne->m_Y = (float)m_Y;
 //            image_position.x = (float)m_X;
 //            image_position.y = (float)m_Y;
             
@@ -175,6 +229,12 @@ int main()
         
         
         
+        
+        
+        
+        
+        
+        
         //causes marmalade engine to process all the drawing requests we've made
         IwGxFlush();
         
@@ -187,6 +247,7 @@ int main()
     delete face2;
     delete fontOne;
     delete labelOne;
+    delete g_pTweener;
 
     //Terminate modules being used
     Iw2DTerminate();
@@ -228,7 +289,9 @@ void ButtonTouchButtonCB(s3ePointerTouchEvent* event){
 
 
 
-
+void nothing(){
+    
+}
 
 class Scene : public CNode{
     Scene();

@@ -46,6 +46,9 @@
 #ifndef IW_MKF_IWRESMANAGER
 #   define IW_MKF_IWRESMANAGER 1
 #endif
+#ifndef IW_MKF_IWTWEEN
+#   define IW_MKF_IWTWEEN 1
+#endif
 #ifndef IW_MKF_IWUTIL
 #   define IW_MKF_IWUTIL 1
 #endif
