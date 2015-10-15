@@ -2,6 +2,7 @@
 set -e
 export GCC_THUMB_SUPPORT='NO'
 PATH="/Applications/Marmalade.app/Contents/tools/gcc/x86/android_osx/bin":$PATH
+PATH="/Applications/Marmalade.app/Contents/tools/gcc/mips/android_mips_osx/bin":$PATH
 PATH="/Applications/Marmalade.app/Contents/s3e/bin":$PATH
 PATH="/Applications/Marmalade.app/Contents/s3e/gcc/darwin/aarch64/bin":$PATH
 PATH="/Applications/Marmalade.app/Contents/s3e/gcc/darwin/arm/bin":$PATH

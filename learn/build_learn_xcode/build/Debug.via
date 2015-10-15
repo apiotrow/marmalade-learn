@@ -1,4 +1,6 @@
 --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug/learn.s86"
+--release="0"
+--sim-release="None"
 --data="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data"
 --checks3edir="1"
 --app-icf1="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf"

@@ -91,7 +91,7 @@
 
 /* including "extra_body" specified by the mkb plugin */
 
-#if !defined I3D_ARCH_ARM && !defined I3D_ARCH_X86 && !defined I3D_ARCH_AARCH64
+#if !defined I3D_ARCH_ARM && !defined I3D_ARCH_X86 && !defined I3D_ARCH_AARCH64 && !defined I3D_ARCH_NACLX86_64
     #if defined __ARMCC_VERSION || defined __arm__
         #define I3D_ARCH_ARM
     #elif defined __aarch64__
@@ -102,15 +102,15 @@
     #endif
 #endif
 
-#if defined I3D_ARCH_ARM || defined I3D_ARCH_X86
+#if defined I3D_ARCH_ARM || defined I3D_ARCH_X86 || defined I3D_ARCH_NACLX86_64
     #if defined I3D_ARCH_64_BIT
         #error "Preprocessor macro mismatch.  Current architecture is not 64 Bit"
-    #endif 
+    #endif
 #else
     #ifdef I3D_ARCH_32_BIT
         #error "Preprocessor macro mismatch.  Current architecture is not 32 Bit"
     #endif
-#endif   
+#endif
 
 #if defined I3D_ARCH_X86 && !defined __i386__
     #define __i386__

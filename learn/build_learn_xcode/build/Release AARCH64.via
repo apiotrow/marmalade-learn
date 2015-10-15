@@ -1,4 +1,6 @@
 --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release AARCH64/learn.s3e"
+--release="1"
+--sim-release="None"
 --data="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data"
 --app-icf1="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf"
 --osx-ext-dll1="/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib"

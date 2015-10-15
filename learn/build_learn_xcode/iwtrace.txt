@@ -1,268 +1,276 @@
 -- TRACE FILE TRUNCATED --
 -- START TRACE TO FILE --
 tracing to: 'iwtrace.txt'
-MarmaladeSDK v7.6.0 [425675] (S3E Loader v4.40.0)
+MarmaladeSDK v7.10.0 [448435] (S3E Loader v4.40.0)
 Copyright (C) 2001-2014 Marmalade Technologies Ltd.
 System Info:
  OS           : OSX (13)
- OS Version   : Darwin 13.4.0 (13.4)
+ OS Version   : Darwin 15.0.0 (15.0)
  Device ID    : OSX (0x1)
  Device Class : WINDOWS_GENERIC (3000)
  Phone Number : 0044123456789
  Unique ID    : SIMULATOR_ID
  Device Name  : 
  Memory       : 1048576KiB
-12/10/15 22:26:53.299: [0x00000fa0] DEVICE: Initialising SURFACE
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: video driver: Quartz
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: hw_available: 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: wm_available: 1
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: bpp         : 32
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: blit_hw     : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: video_mem   : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: current_w   : 1920
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: current_h   : 1200
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: ConfigureSDLVideo_real 0x0 fullscreen 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: requesting window: 800x600
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_HWSURFACE  : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_ANYFORMAT  : 1
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_HWACCEL    : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_ASYNCBLIT  : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_DOUBLEBUF  : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_FULLSCREEN : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_RESIZABLE  : 1
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: SDL_OPENGL     : 0
-12/10/15 22:26:53.322: [0xa04c11a8] SURFACE: calling SetVideoMode: 800x600 16 0x10000010
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: mallocd surface: 0x04def000 800x600 pitch=3200
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: format = XBGR888 ptr = 0x04def000, owned = 1, size = 1920000
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: direct copyup: 0 must_lock: 1
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: native: 800x600 (ptr: 0x04c1a000 pitch: 3200 bpp: 32)
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: bytes per pixel: 4 colorkey: 0 alpha: 255
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: RGBA shift:     8    16    24     0
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: RGBA loss :     0     0     0     8
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: RGBA mask : 0xff00 0xff0000 0xff000000   0x0
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: SDL_HWSURFACE  : 0
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: SDL_ANYFORMAT  : 0
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: SDL_HWACCEL    : 0
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: SDL_ASYNCBLIT  : 1
-12/10/15 22:26:53.376: [0xa04c11a8] SURFACE: SDL_DOUBLEBUF  : 0
-12/10/15 22:26:53.377: [0xa04c11a8] SURFACE: SDL_FULLSCREEN : 0
-12/10/15 22:26:53.377: [0xa04c11a8] SURFACE: SDL_RESIZABLE  : 1
-12/10/15 22:26:53.377: [0xa04c11a8] SURFACE: SDL_OPENGL     : 0
-12/10/15 22:26:53.377: [0xa04c11a8] SURFACE: got dimensions from SDL_GetVideoSurface: 800 600
-12/10/15 22:26:53.378: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
-12/10/15 22:26:53.378: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
-12/10/15 22:26:53.378: [0x00000fa0] SURFACE: done s3eSurfaceInit: 800x600 p:3200 (800x600 p:1600) o:0
-12/10/15 22:26:53.378: [0x00000fa0] DEVICE: Initialising EXT
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eVFS [0x17f48c9f]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eContacts [0x5e39d2af]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
-12/10/15 22:26:53.378: [0x00000fa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eClipboard [0xd68f3420]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eExtOSExec [0x20380948]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eEval [0x167d1038]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eExtEval [0xf0421449]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eThread [0xcc0b4a28]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eCompass [0x40d632c6]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: Compass [0xd3653f1b]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eTest [0x168503f0]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: Metrics [0xbe57ec9c]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: s3eLocation [0x91944229]
-12/10/15 22:26:53.379: [0x00000fa0] EXT: registering extension: Location [0x7604d91e]
-12/10/15 22:26:53.379: [0x00000fa0] DEVICE: Initialising CONFIG
-12/10/15 22:26:53.379: [0x00000fa0] DEVICE: Initialising TIMER
-12/10/15 22:26:53.379: [0x00000fa0] DEVICE: Initialising COMPRESSION
-12/10/15 22:26:53.380: [0x00000fa0] DEVICE: DeviceInit done: services=0x0a216148
-12/10/15 22:26:53.380: [0x00000fa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
-12/10/15 22:26:53.380: [0x00000fa0] EXT: initializing extension: s3eWindow
-12/10/15 22:26:53.380: [0x00000fa0] EXT: initializing extension: s3eWindow 0x0001bdb0
-12/10/15 22:26:53.380: [0x00000fa0] DEVICE: SetupPaths: NULL
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via" ]
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: parsing via file: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.380: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via 0X9 0X0
-12/10/15 22:26:53.380: [0x00000fa0] FILE: s3eFileOpen('/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via', 'r') succeeded, id=1664620 p=0x0019666c
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: reading 1282 bytes from via files
-12/10/15 22:26:53.380: [0x00000fa0] FILE: s3eFileClose h=0x0019666c
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via"  --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Rele
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: setting [commandline]  dll=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM/learn.s3e
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: setting [commandline]  data=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data
-12/10/15 22:26:53.380: [0x00000fa0] LOADER: setting [commandline]  app-icf1=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
-12/10/15 22:26:53.381: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll1=/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib
-12/10/15 22:26:53.381: [0x00000fa0] LOADER: setting [commandline]  config-txt1=/Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt
-12/10/15 22:26:53.381: [0x00000fa0] LOADER: setting [commandline]  config-txt2=/Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt
-12/10/15 22:26:53.381: [0x00000fa0] LOADER: setting [commandline]  config-txt3=/Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt4=/Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt5=/Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt6=/Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt7=/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt8=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt9=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  config-txt10=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
-12/10/15 22:26:53.382: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=/Applications/Marmalade.app/Contents/s3e
-12/10/15 22:26:53.382: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
-12/10/15 22:26:53.382: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data'
-12/10/15 22:26:53.382: [0x00000fa0] FILE: fs[03]: system[raw://] ''
-12/10/15 22:26:53.382: [0x00000fa0] FILE: listed 2 active filesystems
-12/10/15 22:26:53.382: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
-12/10/15 22:26:53.382: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data'
-12/10/15 22:26:53.382: [0x00000fa0] FILE: fs[01]: system[ram://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data-ram'
-12/10/15 22:26:53.382: [0x00000fa0] FILE: fs[03]: system[raw://] ''
-12/10/15 22:26:53.382: [0x00000fa0] FILE: listed 3 active filesystems
-12/10/15 22:26:53.383: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
-12/10/15 22:26:53.383: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
-12/10/15 22:26:53.383: [0x00000fa0] LOADER: Using data directory /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data as ROM drive
-12/10/15 22:26:53.384: [0x00000fa0] LOADER: Using directory /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data-ram as RAM drive
-12/10/15 22:26:53.384: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt 0X9 0X0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt', 'r') succeeded, id=1000 p=0x00198094
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileClose h=0x00198094
-12/10/15 22:26:53.384: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt 0X9 0X0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt', 'r') succeeded, id=1001 p=0x001984b0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileClose h=0x001984b0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt 0X9 0X0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt', 'r') succeeded, id=1002 p=0x001988cc
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileClose h=0x001988cc
-12/10/15 22:26:53.384: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt 0X9 0X0
-12/10/15 22:26:53.384: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt', 'r') succeeded, id=1003 p=0x00198ce8
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileClose h=0x00198ce8
-12/10/15 22:26:53.385: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt 0X9 0X0
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt', 'r') succeeded, id=1004 p=0x00199104
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileClose h=0x00199104
-12/10/15 22:26:53.385: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt 0X9 0X0
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt', 'r') succeeded, id=1005 p=0x00199520
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileClose h=0x00199520
-12/10/15 22:26:53.385: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt 0X9 0X0
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1006 p=0x0019993c
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileClose h=0x0019993c
-12/10/15 22:26:53.385: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
-12/10/15 22:26:53.385: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1007 p=0x00199d58
-12/10/15 22:26:53.390: [0x00000fa0] FILE: s3eFileClose h=0x00199d58
-12/10/15 22:26:53.390: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt 0X9 0X0
-12/10/15 22:26:53.390: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt', 'r') succeeded, id=1008 p=0x0019a174
-12/10/15 22:26:53.390: [0x00000fa0] FILE: s3eFileClose h=0x0019a174
-12/10/15 22:26:53.390: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
-12/10/15 22:26:53.390: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1009 p=0x0019a590
-12/10/15 22:26:53.398: [0x00000fa0] FILE: s3eFileClose h=0x0019a590
-12/10/15 22:26:53.398: [0x00000fa0] LOADER: s3eExecReadConfigFromS3EFiles()
-12/10/15 22:26:53.398: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.icf 0X9 0X0
-12/10/15 22:26:53.398: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.icf', 'rb') succeeded, id=1010 p=0x0019a9ac
-12/10/15 22:26:53.398: [0x00000fa0] LOADER: Loading config from: /Applications/Marmalade.app/Contents/s3e/s3e.icf
-12/10/15 22:26:53.399: [0x00000fa0] FILE: s3eFileClose h=0x0019a9ac
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: Loading app-icf from command line specified location /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
-12/10/15 22:26:53.399: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf 0X9 0X0
-12/10/15 22:26:53.399: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf', 'rb') succeeded, id=1011 p=0x0019adc8
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: Loading config from: raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
-12/10/15 22:26:53.399: [0x00000fa0] FILE: s3eFileClose h=0x0019adc8
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via" ]
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: parsing via file: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.399: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via 0X9 0X0
-12/10/15 22:26:53.399: [0x00000fa0] FILE: s3eFileOpen('/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via', 'r') succeeded, id=1012 p=0x0019b1e4
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: reading 1282 bytes from via files
-12/10/15 22:26:53.399: [0x00000fa0] FILE: s3eFileClose h=0x0019b1e4
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via"  --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Rele
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  dll=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM/learn.s3e
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  data=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  app-icf1=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll1=/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  config-txt1=/Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  config-txt2=/Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  config-txt3=/Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt
-12/10/15 22:26:53.399: [0x00000fa0] LOADER: setting [commandline]  config-txt4=/Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt5=/Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt6=/Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt7=/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt8=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt9=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  config-txt10=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=/Applications/Marmalade.app/Contents/s3e
-12/10/15 22:26:53.400: [0x00000fa0] LOADER: s3eExecMemoryCheck: Memory free: 1048576K
-MarmaladeSDK v7.6.0 [425675] (S3E Loader v4.40.0)
+15/10/15 04:30:33.920: [0x00000fa0] DEVICE: Initialising SURFACE
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: video driver: Quartz
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: hw_available: 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: wm_available: 1
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: bpp         : 32
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: blit_hw     : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: video_mem   : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: current_w   : 1920
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: current_h   : 1200
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: ConfigureSDLVideo_real 0x0 fullscreen 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: requesting window: 800x600
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_HWSURFACE  : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_ANYFORMAT  : 1
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_HWACCEL    : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_ASYNCBLIT  : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_DOUBLEBUF  : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_FULLSCREEN : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_RESIZABLE  : 1
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: SDL_OPENGL     : 0
+15/10/15 04:30:33.920: [0xa27c8000] SURFACE: calling SetVideoMode: 800x600 16 0x10000010
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: mallocd surface: 0x04bac000 800x600 pitch=3200
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: format = XBGR888 ptr = 0x04bac000, owned = 1, size = 1920000
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: direct copyup: 0 must_lock: 1
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: native: 800x600 (ptr: 0x03262000 pitch: 3200 bpp: 32)
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: bytes per pixel: 4 colorkey: 0 alpha: 255
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: RGBA shift:     8    16    24     0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: RGBA loss :     0     0     0     8
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: RGBA mask : 0xff00 0xff0000 0xff000000   0x0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_HWSURFACE  : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_ANYFORMAT  : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_HWACCEL    : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_ASYNCBLIT  : 1
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_DOUBLEBUF  : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_FULLSCREEN : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_RESIZABLE  : 1
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: SDL_OPENGL     : 0
+15/10/15 04:30:33.948: [0xa27c8000] SURFACE: got dimensions from SDL_GetVideoSurface: 800 600
+15/10/15 04:30:33.949: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+15/10/15 04:30:33.949: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
+15/10/15 04:30:33.950: [0x00000fa0] SURFACE: done s3eSurfaceInit: 800x600 p:3200 (800x600 p:1600) o:0
+15/10/15 04:30:33.950: [0x00000fa0] DEVICE: Initialising EXT
+15/10/15 04:30:33.950: [0x00000fa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+15/10/15 04:30:33.950: [0x00000fa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+15/10/15 04:30:33.950: [0x00000fa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+15/10/15 04:30:33.950: [0x00000fa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eLocation [0x91944229]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: Location [0x7604d91e]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eEval [0x167d1038]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eExtEval [0xf0421449]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eCompass [0x40d632c6]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: Compass [0xd3653f1b]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eTest [0x168503f0]
+15/10/15 04:30:33.951: [0x00000fa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+15/10/15 04:30:33.952: [0x00000fa0] EXT: registering extension: Metrics [0xbe57ec9c]
+15/10/15 04:30:33.952: [0x00000fa0] DEVICE: Initialising CONFIG
+15/10/15 04:30:33.952: [0x00000fa0] DEVICE: Initialising TIMER
+15/10/15 04:30:33.952: [0x00000fa0] DEVICE: Initialising COMPRESSION
+15/10/15 04:30:33.952: [0x00000fa0] DEVICE: DeviceInit done: services=0x0a216148
+15/10/15 04:30:33.952: [0x00000fa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+15/10/15 04:30:33.952: [0x00000fa0] EXT: initializing extension: s3eWindow
+15/10/15 04:30:33.952: [0x00000fa0] EXT: initializing extension: s3eWindow 0x0006a100
+15/10/15 04:30:33.952: [0x00000fa0] DEVICE: SetupPaths: NULL
+15/10/15 04:30:33.952: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via" ]
+15/10/15 04:30:33.952: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.952: [0x00000fa0] LOADER: parsing via file: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.952: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via 0X9 0X0
+15/10/15 04:30:33.953: [0x00000fa0] FILE: s3eFileOpen('/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via', 'r') succeeded, id=2054764 p=0x001f5a6c
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: reading 1317 bytes from via files
+15/10/15 04:30:33.953: [0x00000fa0] FILE: s3eFileClose h=0x001f5a6c
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via"  --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Rele
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  dll=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM/learn.s3e
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  release=1
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  sim-release=True
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  data=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  app-icf1=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll1=/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  config-txt1=/Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  config-txt2=/Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  config-txt3=/Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  config-txt4=/Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt
+15/10/15 04:30:33.953: [0x00000fa0] LOADER: setting [commandline]  config-txt5=/Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  config-txt6=/Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  config-txt7=/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  config-txt8=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  config-txt9=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  config-txt10=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+15/10/15 04:30:33.954: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=/Applications/Marmalade.app/Contents/s3e
+15/10/15 04:30:33.954: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+15/10/15 04:30:33.954: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data'
+15/10/15 04:30:33.954: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+15/10/15 04:30:33.954: [0x00000fa0] FILE: listed 2 active filesystems
+15/10/15 04:30:33.954: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+15/10/15 04:30:33.954: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data'
+15/10/15 04:30:33.954: [0x00000fa0] FILE: fs[01]: system[ram://] '/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data-ram'
+15/10/15 04:30:33.954: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+15/10/15 04:30:33.954: [0x00000fa0] FILE: listed 3 active filesystems
+15/10/15 04:30:33.956: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+15/10/15 04:30:33.956: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+15/10/15 04:30:33.956: [0x00000fa0] LOADER: Using data directory /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data as ROM drive
+15/10/15 04:30:33.956: [0x00000fa0] LOADER: Using directory /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data-ram as RAM drive
+15/10/15 04:30:33.956: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt 0X9 0X0
+15/10/15 04:30:33.956: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt', 'r') succeeded, id=1000 p=0x001f7494
+15/10/15 04:30:33.956: [0x00000fa0] FILE: s3eFileClose h=0x001f7494
+15/10/15 04:30:33.956: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt 0X9 0X0
+15/10/15 04:30:33.956: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt', 'r') succeeded, id=1001 p=0x001f78b0
+15/10/15 04:30:33.957: [0x00000fa0] FILE: s3eFileClose h=0x001f78b0
+15/10/15 04:30:33.957: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt 0X9 0X0
+15/10/15 04:30:33.957: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt', 'r') succeeded, id=1002 p=0x001f7ccc
+15/10/15 04:30:33.960: [0x00000fa0] FILE: s3eFileClose h=0x001f7ccc
+15/10/15 04:30:33.960: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt 0X9 0X0
+15/10/15 04:30:33.960: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt', 'r') succeeded, id=1003 p=0x001f80e8
+15/10/15 04:30:33.969: [0x00000fa0] FILE: s3eFileClose h=0x001f80e8
+15/10/15 04:30:33.969: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt 0X9 0X0
+15/10/15 04:30:33.969: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt', 'r') succeeded, id=1004 p=0x001f8504
+15/10/15 04:30:33.970: [0x00000fa0] FILE: s3eFileClose h=0x001f8504
+15/10/15 04:30:33.970: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt 0X9 0X0
+15/10/15 04:30:33.970: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt', 'r') succeeded, id=1005 p=0x001f8920
+15/10/15 04:30:33.971: [0x00000fa0] FILE: s3eFileClose h=0x001f8920
+15/10/15 04:30:33.971: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt 0X9 0X0
+15/10/15 04:30:33.971: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1006 p=0x001f8d3c
+15/10/15 04:30:33.971: [0x00000fa0] FILE: s3eFileClose h=0x001f8d3c
+15/10/15 04:30:33.971: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
+15/10/15 04:30:33.971: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1007 p=0x001f9158
+15/10/15 04:30:33.980: [0x00000fa0] FILE: s3eFileClose h=0x001f9158
+15/10/15 04:30:33.980: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt 0X9 0X0
+15/10/15 04:30:33.980: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt', 'r') succeeded, id=1008 p=0x001f9574
+15/10/15 04:30:33.980: [0x00000fa0] FILE: s3eFileClose h=0x001f9574
+15/10/15 04:30:33.980: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
+15/10/15 04:30:33.980: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1009 p=0x001f9990
+15/10/15 04:30:33.985: [0x00000fa0] FILE: s3eFileClose h=0x001f9990
+15/10/15 04:30:33.985: [0x00000fa0] LOADER: s3eExecReadConfigFromS3EFiles()
+15/10/15 04:30:33.985: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.icf 0X9 0X0
+15/10/15 04:30:33.985: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.icf', 'rb') succeeded, id=1010 p=0x001f9dac
+15/10/15 04:30:33.985: [0x00000fa0] LOADER: Loading config from: /Applications/Marmalade.app/Contents/s3e/s3e.icf
+15/10/15 04:30:33.987: [0x00000fa0] FILE: s3eFileClose h=0x001f9dac
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: Loading app-icf from command line specified location /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
+15/10/15 04:30:33.987: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf 0X9 0X0
+15/10/15 04:30:33.987: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf', 'rb') succeeded, id=1011 p=0x001fa1c8
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: Loading config from: raw:///Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
+15/10/15 04:30:33.987: [0x00000fa0] FILE: s3eFileClose h=0x001fa1c8
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via" ]
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: parsing via file: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.987: [0x00000fa0] FILE: open: /Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via 0X9 0X0
+15/10/15 04:30:33.987: [0x00000fa0] FILE: s3eFileOpen('/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via', 'r') succeeded, id=1012 p=0x001fa5e4
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: reading 1317 bytes from via files
+15/10/15 04:30:33.987: [0x00000fa0] FILE: s3eFileClose h=0x001fa5e4
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: ParseCommandLineData [-via:"/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via"  --dll="/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Rele
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  via=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM.via
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  dll=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release ARM/learn.s3e
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  release=1
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  sim-release=True
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  data=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data
+15/10/15 04:30:33.987: [0x00000fa0] LOADER: setting [commandline]  app-icf1=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.icf
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll1=/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt1=/Applications/Marmalade.app/Contents/modules/iw2d/docs/iw2d.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt2=/Applications/Marmalade.app/Contents/modules/iwgeom/docs/iwgeom.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt3=/Applications/Marmalade.app/Contents/modules/iwgl/docs/iwgl.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt4=/Applications/Marmalade.app/Contents/modules/iwgx/docs/iwgx.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt5=/Applications/Marmalade.app/Contents/modules/iwgxfont/docs/iwgxfont.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt6=/Applications/Marmalade.app/Contents/modules/iwresmanager/docs/iwresmanager.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt7=/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt8=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt9=/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/data/app.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  config-txt10=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=/Applications/Marmalade.app/Contents/s3e
+15/10/15 04:30:33.988: [0x00000fa0] LOADER: s3eExecMemoryCheck: Memory free: 1048576K
+MarmaladeSDK v7.10.0 [448435] (S3E Loader v4.40.0)
 Copyright (C) 2001-2014 Marmalade Technologies Ltd.
 System Info:
  OS           : ANDROID (18)
- OS Version   : Darwin 13.4.0 (13.4)
+ OS Version   : Darwin 15.0.0 (15.0)
  Device ID    : OSX (0x1)
  Device Class : WINDOWS_GENERIC (3000)
  Phone Number : 0044123456789
  Unique ID    : SIMULATOR_ID
  Device Name  : 
  Memory       : 1048576KiB
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: scaling=0
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: Notifying app of surface size change: 320x480
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: mallocd surface: 0x04fc4000 320x480 pitch=1280
-12/10/15 22:26:53.400: [0x00000fa0] SURFACE: format = XBGR888 ptr = 0x04fc4000, owned = 1, size = 614400
-12/10/15 22:26:53.401: [0xa04c11a8] SURFACE: ConfigureSDLVideo_real 320x480 fullscreen 0
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: mallocd surface: 0x04fc4000 320x480 pitch=1280
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: format = XBGR888 ptr = 0x04fc4000, owned = 1, size = 614400
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: direct copyup: 0 must_lock: 1
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: native: 320x480 (ptr: 0x0505a000 pitch: 1280 bpp: 32)
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: bytes per pixel: 4 colorkey: 0 alpha: 255
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: RGBA shift:     8    16    24     0
-12/10/15 22:26:53.417: [0xa04c11a8] SURFACE: RGBA loss :     0     0     0     8
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: RGBA mask : 0xff00 0xff0000 0xff000000   0x0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_HWSURFACE  : 0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_ANYFORMAT  : 0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_HWACCEL    : 0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_ASYNCBLIT  : 1
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_DOUBLEBUF  : 0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_FULLSCREEN : 0
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_RESIZABLE  : 1
-12/10/15 22:26:53.418: [0xa04c11a8] SURFACE: SDL_OPENGL     : 0
-12/10/15 22:26:53.420: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
-12/10/15 22:26:53.420: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
-12/10/15 22:26:53.420: [0x00000fa0] EXT: Registering user-supplied extensions
-12/10/15 22:26:53.420: [0x00000fa0] EXT: Loading extension dll /Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool_d.dylib
-12/10/15 22:26:53.421: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool_d.dylib' -> 0x7afaff80
-12/10/15 22:26:53.422: [0x00000fa0] LOADER: GL not present, resolving all GL symbols to unavailable
-12/10/15 22:26:53.422: [0x00000fa0] EXT: registering extension: PVRTexTool [0xb6b3ceac]
-12/10/15 22:26:53.422: [0x00000fa0] LOADER: Calling s3eDeviceInit()
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: DeviceInit: services=0xfffdffff [0xe7dc9eb7]
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising CALLBACKS
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising CRYPTO
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising ERROR
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising SOCKET
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising STORAGE
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising VIBRA
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising KEYBOARD
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising POINTER
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising ACCELEROMETER
-12/10/15 22:26:53.422: [0x00000fa0] ACCELEROMETER: damping=0 scaling=0
-12/10/15 22:26:53.422: [0x00000fa0] DEVICE: Initialising SOUND
-12/10/15 22:26:53.422: [0x00000fa0] SOUND: SND1_Init
-12/10/15 22:26:53.422: [0x00000fa0] SOUND: starting SDL audio driver: freq=22050 channels=2 samples=1024
-12/10/15 22:26:53.511: [0x00000fa0] SOUND: using sound driver: coreaudio
-12/10/15 22:26:53.511: [0x00000fa0] SOUND: stereo sound enabled
-12/10/15 22:26:53.511: [0x00000fa0] SOUND: s3eSoundStop: started=0
-12/10/15 22:26:53.511: [0x00000fa0] SOUND: SetMasterVolume: 255 -> 256
-12/10/15 22:26:53.511: [0x00000fa0] DEVICE: Initialising AUDIO
-12/10/15 22:26:53.512: [0x00000fa0] AUDIO: Number of channels = 16
-12/10/15 22:26:53.512: [0x00000fa0] DEVICE: Initialising VIDEO
-12/10/15 22:26:53.512: [0x00000fa0] DEVICE: Initialising LICENSE
-12/10/15 22:26:53.512: [0x00000fa0] DEVICE: Initialising GL
-12/10/15 22:26:53.512: [0x00000fa0] GL: GLES desired version is 2
-12/10/15 22:26:53.512: [0x00000fa0] GL: DLL search path: /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2
-12/10/15 22:26:53.513: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib' -> 0x7ae5a070
-12/10/15 22:26:53.513: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib
-12/10/15 22:26:53.513: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib' -> 0x7ae59f90
-12/10/15 22:26:53.513: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib
-12/10/15 22:26:53.514: [0x00000fa0] GL: Using GLES 2
-12/10/15 22:26:53.554: [0x00000fa0] DEVICE: DeviceInit done: services=0xfffdffff
-12/10/15 22:26:53.560: [0x00000fa0] SPLASH: displaying debug splash-screen
-12/10/15 22:26:53.587: [0x00000fa0] LICENSE: SplashScreenRequired: Splash set in licenseText
-12/10/15 22:26:53.592: [0x00000fa0] LICENSE: LicenseType: ret true : output=Community
-12/10/15 22:26:53.592: [0x00000fa0] SPLASH: No splash screen specified
-12/10/15 22:26:53.592: [0x00000fa0] DEVICE: s3eQemuInit
-12/10/15 22:26:53.609: [0x00000fa0] DEFAULT: done vm_start
+15/10/15 04:30:33.988: [0x00000fa0] SURFACE: scaling=0
+15/10/15 04:30:33.988: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+15/10/15 04:30:33.988: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
+15/10/15 04:30:33.989: [0x00000fa0] SURFACE: Notifying app of surface size change: 320x480
+15/10/15 04:30:33.989: [0x00000fa0] SURFACE: mallocd surface: 0x054fc000 320x480 pitch=1280
+15/10/15 04:30:33.989: [0x00000fa0] SURFACE: format = XBGR888 ptr = 0x054fc000, owned = 1, size = 614400
+15/10/15 04:30:33.989: [0xa27c8000] SURFACE: ConfigureSDLVideo_real 320x480 fullscreen 0
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: mallocd surface: 0x054fc000 320x480 pitch=1280
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: format = XBGR888 ptr = 0x054fc000, owned = 1, size = 614400
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: direct copyup: 0 must_lock: 1
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: native: 320x480 (ptr: 0x0511c000 pitch: 1280 bpp: 32)
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: bytes per pixel: 4 colorkey: 0 alpha: 255
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: RGBA shift:     8    16    24     0
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: RGBA loss :     0     0     0     8
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: RGBA mask : 0xff00 0xff0000 0xff000000   0x0
+15/10/15 04:30:33.998: [0xa27c8000] SURFACE: SDL_HWSURFACE  : 0
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_ANYFORMAT  : 0
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_HWACCEL    : 0
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_ASYNCBLIT  : 1
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_DOUBLEBUF  : 0
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_FULLSCREEN : 0
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_RESIZABLE  : 1
+15/10/15 04:30:33.999: [0xa27c8000] SURFACE: SDL_OPENGL     : 0
+15/10/15 04:30:34.001: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+15/10/15 04:30:34.001: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
+15/10/15 04:30:34.001: [0x00000fa0] EXT: Registering user-supplied extensions
+15/10/15 04:30:34.001: [0x00000fa0] EXT: Loading extension dll /Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool_d.dylib
+15/10/15 04:30:34.012: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool_d.dylib' -> 0x7979ea20
+15/10/15 04:30:34.012: [0x00000fa0] LOADER: GL not present, resolving all GL symbols to unavailable
+15/10/15 04:30:34.013: [0x00000fa0] EXT: registering extension: PVRTexTool [0xb6b3ceac]
+15/10/15 04:30:34.014: [0x00000fa0] LOADER: Calling s3eDeviceInit()
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: DeviceInit: services=0xfffdffff [0xe7dc9eb7]
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising CALLBACKS
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising CRYPTO
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising ERROR
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising SOCKET
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising STORAGE
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising VIBRA
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising KEYBOARD
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising POINTER
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising ACCELEROMETER
+15/10/15 04:30:34.014: [0x00000fa0] ACCELEROMETER: damping=0 scaling=0
+15/10/15 04:30:34.014: [0x00000fa0] DEVICE: Initialising SOUND
+15/10/15 04:30:34.015: [0x00000fa0] SOUND: SND1_Init
+15/10/15 04:30:34.015: [0x00000fa0] SOUND: starting SDL audio driver: freq=22050 channels=2 samples=1024
+15/10/15 04:30:34.072: [0x00000fa0] SOUND: using sound driver: coreaudio
+15/10/15 04:30:34.073: [0x00000fa0] SOUND: stereo sound enabled
+15/10/15 04:30:34.073: [0x00000fa0] SOUND: s3eSoundStop: started=0
+15/10/15 04:30:34.073: [0x00000fa0] SOUND: SetMasterVolume: 255 -> 256
+15/10/15 04:30:34.073: [0x00000fa0] DEVICE: Initialising AUDIO
+15/10/15 04:30:34.073: [0x00000fa0] AUDIO: Number of channels = 16
+15/10/15 04:30:34.073: [0x00000fa0] DEVICE: Initialising VIDEO
+15/10/15 04:30:34.078: [0x00000fa0] DEVICE: Initialising LICENSE
+15/10/15 04:30:34.078: [0x00000fa0] DEVICE: Initialising GL
+15/10/15 04:30:34.079: [0x00000fa0] GL: GLES desired version is 2
+15/10/15 04:30:34.079: [0x00000fa0] GL: DLL search path: /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2
+15/10/15 04:30:34.087: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib' -> 0x797a84c0
+15/10/15 04:30:34.087: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib
+15/10/15 04:30:34.087: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib' -> 0x797a8720
+15/10/15 04:30:34.087: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib
+15/10/15 04:30:34.088: [0x00000fa0] GL: Using GLES 2
+15/10/15 04:30:34.155: [0x00000fa0] DEVICE: DeviceInit done: services=0xfffdffff
+15/10/15 04:30:34.165: [0x00000fa0] SPLASH: s3eSplashScreenManager::add > splash->show()
+15/10/15 04:30:34.165: [0x00000fa0] SPLASH: displaying debug splash-screen
+15/10/15 04:30:34.178: [0x00000fa0] LICENSE: SplashScreenRequired: Splash set in licenseText
+15/10/15 04:30:34.178: [0x00000fa0] SPLASH: No splash screen specified
+15/10/15 04:30:34.178: [0x00000fa0] DEVICE: s3eQemuInit
+15/10/15 04:30:34.205: [0x00000fa0] DEFAULT: done vm_start
+15/10/15 04:30:44.502: [0xa27c8000] DEVICE: Quit requested by SDL
+15/10/15 04:30:44.503: [0xa27c8000] DEVICE: s3eDeviceNotify 2
+15/10/15 04:30:44.503: [0xa27c8000] DEVICE: done s3eDeviceNotify
+15/10/15 04:30:44.503: [0xa27c8000] DEVICE: done RequestQuit

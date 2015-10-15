@@ -36,14 +36,19 @@ class DefaultConfig(DeployConfig):
     osx_ext_dll = ['/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/osx/libPVRTexTool.dylib']
     wp81_extra_pri = []
     ws8_ext_capabilities = []
+    ws8_ext_native_only_dll = []
+    win10_ext_uap_capabilities = []
+    win10_ext_native_dll = []
+    ws81_ext_native_only_dll = []
     android_external_res = []
     win32_ext_dll = ['/Applications/Marmalade.app/Contents/extensions/PVRTexTool/lib/win32/PVRTexTool.dll']
+    win10_ext_sdk_ref = []
     wp8_ext_capabilities = []
     ws8_extra_res = []
     ws81_ext_managed_dll = []
     iphone_link_libdir = []
-    wp81_ext_capabilities = []
     android_extra_application_manifest = []
+    win10_extra_res = []
     ws8_ext_native_dll = []
     android_external_assets = []
     blackberry_extra_descriptor = []
@@ -52,8 +57,10 @@ class DefaultConfig(DeployConfig):
     wp81_ext_sdk_ref = []
     iphone_link_libdirs = []
     wp81_ext_device_capabilities = []
+    win10_ext_capabilities = []
     linux_ext_lib = []
     android_ext_min_sdk_version = []
+    wp81_ext_native_only_dll = []
     ws8_ext_managed_dll = []
     ws8_ext_sdk_manifest_part = []
     ws8_ext_device_capabilities = []
@@ -61,17 +68,23 @@ class DefaultConfig(DeployConfig):
     android_external_jars = []
     win8_winrt_extra_res = []
     wp81_ext_sdk_manifest_part = []
-    android_supports_gl_texture = []
     wp81_extra_res = []
     wp81_ext_managed_dll = []
+    wp81_ext_capabilities = []
+    win10_ext_managed_dll = []
     iphone_extra_plist = []
     ws81_ext_sdk_manifest_part = []
     ws81_ext_device_capabilities = []
+    android_supports_gl_texture = []
     ws8_ext_sdk_ref = []
     iphone_extra_string = []
     tizen_so = []
     wp8_ext_native_dll = []
+    win10_ext_sdk_manifest_part = []
+    win10_extra_pri = []
+    win10_ext_device_capabilities = []
     win8_phone_extra_res = []
+    win32_aux_dll = []
     win8_store_extra_res = []
     iphone_link_opts = []
     ws81_ext_sdk_ref = []
@@ -87,10 +100,15 @@ class DefaultConfig(DeployConfig):
     wp81_ext_native_dll = []
     ws81_ext_capabilities = []
     iphone_link_libs = []
+    android_extra_strings = []
     target = {
          'aarch64_gcc' : {
                    'debug'   : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug AARCH64/learn.s3e',
                    'release' : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release AARCH64/learn.s3e',
+                 },
+         'naclx86_64' : {
+                   'debug'   : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug X86_64 NaCL/learn.so.s64',
+                   'release' : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Release X86_64 NaCL/learn.so.s64',
                  },
          'x86' : {
                    'debug'   : r'/Users/aaronpiotrowski/MarmaladeProjects/learn/learn/build_learn_xcode/build/Debug/learn.s86',
