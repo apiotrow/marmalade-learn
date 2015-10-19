@@ -1,0 +1,15 @@
+# comments and whitespace stripped by deployment tool
+[APP]
+{OS=ANDROID}
+Message="we're on android"
+{}
+{OS=IPHONE}
+Message="we're on ios"
+{}
+{OS=OSX}
+Message="we're on osx"
+{}
+[s3e]
+SysAppVersion=0.0.1
+SysAppCaption="learn"
+AndroidExtSo=""

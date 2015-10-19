@@ -70,6 +70,11 @@ int main()
     
     
     
+    
+    
+    
+    
+    
     // Create an image from a PNG file
     CSprite* spriteOne = new CSprite();
     CIw2DImage* face2 = Iw2DCreateImage("sprites/face2.png"); //must be declared separately so we can delete it (can't be created within the parens in the call below)
@@ -80,6 +85,44 @@ int main()
     spriteOne->m_H = spriteOne->GetImage()->GetHeight();
     spriteOne->m_AnchorX = 0.5; //anchor within the image itself
     spriteOne->m_AnchorY = 0.5;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //animation with sprite atlas
+    
+    //atlast stuff
+    CIw2DImage* gemspriteatlasPNG = Iw2DCreateImage("sprites/sparkle_tomato.png");
+    int gemsprite_w = (int)(gemspriteatlasPNG->GetWidth() / 5); //amount of frames in width
+    int gemsprite_h = (int)(gemspriteatlasPNG->GetHeight() / 3); //amount of frames in height
+    CAtlas* gemspriteatlas = new CAtlas(gemsprite_w, gemsprite_h, 15, gemspriteatlasPNG);
+
+    //giving atlas to a sprite
+    CSprite* gemsprite = new CSprite();
+    gemsprite->m_X = (float)IwGxGetScreenWidth() / 2;
+    gemsprite->m_Y = (float)IwGxGetScreenHeight() / 2;
+    gemsprite->SetAtlas(gemspriteatlas);
+    gemsprite->m_W = (float)gemspriteatlas->GetFrameWidth();
+    gemsprite->m_H = (float)gemspriteatlas->GetFrameHeight();
+    gemsprite->m_AnchorX = 0.5;
+    gemsprite->m_AnchorY = 0.5;
+    gemsprite->SetAnimDuration(2); //how many seconds an animation takes
+    //        gemsprite->SetAnimRepeat(2); //how many times you want it to repeat
+    
+    
+    
+    
+    
     
     
     
@@ -106,8 +149,20 @@ int main()
     
     
     
-//    CIw2DImage* image = Iw2DCreateImage("sprites/face2.png");
-//    CIwFVec2    image_position = CIwFVec2::g_Zero;
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     //setting up listener functions
     //if we're on computer and only have mouse, set input for that. if we're on a touch screen, set input for that
@@ -120,13 +175,7 @@ int main()
         s3ePointerRegister(S3E_POINTER_BUTTON_EVENT, (s3eCallback)ButtonTouchButtonCB, 0);
     }
 
-    
-    
-    
-//    float old_sprite_X;
-//    float old_sprite_Y;
-//    float new_sprite_X;
-//    float new_sprite_Y;
+
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
@@ -163,53 +212,32 @@ int main()
         
         //input
         s3ePointerUpdate();
-        //this means user has let up from a touch
+        //this goes through when user has let up from a touch
         if(!touched && prevTouched){
-//            old_sprite_X = spriteOne->m_X;
-//            old_sprite_Y = spriteOne->m_Y;
-//            new_sprite_X = (float)m_X;
-//            new_sprite_Y = (float)m_Y;
-            
             g_pTweener->Tween(2.0f,
                               FLOAT, &spriteOne->m_X, (float)m_X,
                               FLOAT, &spriteOne->m_Y,(float)m_Y,
                               EASING, Ease::linear,
 //                              ONCOMPLETE, nothing,
                               END);
-            
-//            g_pTweener->Tween(2.0f,
-//                              FLOAT, &spriteOne->m_Y,
-//                              FLOAT, (float)m_Y,
-//                              EASING, Ease::sineIn,
-//                              ONCOMPLETE, nothing,
-//                              END);
-            
-//            spriteOne->m_X = (float)m_X;
-//            spriteOne->m_Y = (float)m_Y;
-            
 
-//            spriteOne->m_X = (float)m_X;
-//            spriteOne->m_Y = (float)m_Y;
-//            image_position.x = (float)m_X;
-//            image_position.y = (float)m_Y;
-            
             touched = false;
             prevTouched = false;
         }
     
         //print to console
         std::ostringstream buff;
-//        buff<<image_position.x;
+
         buff<<spriteOne->m_X;
         string string_xpos = buff.str();
         buff.str("");
         buff.clear();
-//        buff<<image_position.y;
+
         buff<<spriteOne->m_Y;
         string string_ypos = buff.str();
         cout << string_xpos + ", " + string_ypos + "\n";
 
-//        Iw2DDrawImage(image, image_position);
+
         
         spriteOne->Update((30.0f / 1000.0f), 1);
         spriteOne->Render();
@@ -217,13 +245,15 @@ int main()
         labelOne->Update((30.0f / 1000.0f), 1);
         labelOne->Render();
         
+        gemsprite->Update((30.0f / 1000.0f), 1);
+        gemsprite->Render();
         
         
         
         
         
         
-        
+
         
         
         
@@ -248,6 +278,9 @@ int main()
     delete fontOne;
     delete labelOne;
     delete g_pTweener;
+    delete gemspriteatlas;
+    delete gemsprite;
+    delete gemspriteatlasPNG;
 
     //Terminate modules being used
     Iw2DTerminate();
